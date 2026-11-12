@@ -1,0 +1,15 @@
+{
+  "paths": {
+    "custom_tc_excel": "test_cases.xlsx",
+    "artifacts_dir": "artifacts",
+    "screenshots_dir": "artifacts/screenshots"
+  },
+  "quality_gate": {
+    "min_pass_score": 85
+  },
+  "browser": {
+    "headless": false,
+    "slow_mo_ms": 500,
+    "timeout_ms": 10000
+  }
+}

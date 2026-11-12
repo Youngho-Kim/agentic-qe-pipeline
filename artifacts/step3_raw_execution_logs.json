@@ -1,0 +1,1558 @@
+[
+  {
+    "tc_id": "TC-001",
+    "title": "정상 계정(standard_user) 로그인 및 인벤토리 진입",
+    "category": "인증",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 2.37,
+    "screenshot": "artifacts/screenshots\\TC-001_fail.png",
+    "error_details": "기대값 '상품 목록 페이지 헤더 확인' vs 실제값 'Products' 불일치",
+    "failed_step": {
+      "step_num": 5,
+      "action": "assert_text",
+      "selector": ".title",
+      "val": "Products",
+      "expected": "상품 목록 페이지 헤더 확인"
+    }
+  },
+  {
+    "tc_id": "TC-002",
+    "title": "잘못된 비밀번호 입력 시 로그인 실패 검증",
+    "category": "인증",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 2.11,
+    "screenshot": "artifacts/screenshots\\TC-002_fail.png",
+    "error_details": "기대값 '인증 실패 에러 메시지 확인' vs 실제값 'Epic sadface: Username and password do not match any user in this service' 불일치",
+    "failed_step": {
+      "step_num": 5,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "Username and password do not match",
+      "expected": "인증 실패 에러 메시지 확인"
+    }
+  },
+  {
+    "tc_id": "TC-003",
+    "title": "아이디 미입력(빈값) 로그인 시도 유효성 검증",
+    "category": "유효성",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 1.61,
+    "screenshot": "artifacts/screenshots\\TC-003_fail.png",
+    "error_details": "기대값 '아이디 필수값 에러 노출 확인' vs 실제값 'Epic sadface: Username is required' 불일치",
+    "failed_step": {
+      "step_num": 4,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "Username is required",
+      "expected": "아이디 필수값 에러 노출 확인"
+    }
+  },
+  {
+    "tc_id": "TC-004",
+    "title": "비밀번호 미입력(빈값) 로그인 시도 유효성 검증",
+    "category": "유효성",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 1.62,
+    "screenshot": "artifacts/screenshots\\TC-004_fail.png",
+    "error_details": "기대값 '비밀번호 필수값 에러 노출 확인' vs 실제값 'Epic sadface: Password is required' 불일치",
+    "failed_step": {
+      "step_num": 4,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "Password is required",
+      "expected": "비밀번호 필수값 에러 노출 확인"
+    }
+  },
+  {
+    "tc_id": "TC-005",
+    "title": "아이디/비밀번호 모두 빈값 상태에서 로그인 시도",
+    "category": "유효성",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 1.12,
+    "screenshot": "artifacts/screenshots\\TC-005_fail.png",
+    "error_details": "기대값 '우선순위에 따른 아이디 필수 에러 노출' vs 실제값 'Epic sadface: Username is required' 불일치",
+    "failed_step": {
+      "step_num": 3,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "Username is required",
+      "expected": "우선순위에 따른 아이디 필수 에러 노출"
+    }
+  },
+  {
+    "tc_id": "TC-006",
+    "title": "잠긴 계정(locked_out_user) 로그인 차단 검증",
+    "category": "보안",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 2.14,
+    "screenshot": "artifacts/screenshots\\TC-006_fail.png",
+    "error_details": "기대값 '계정 잠김 알림 에러 확인' vs 실제값 'Epic sadface: Sorry, this user has been locked out.' 불일치",
+    "failed_step": {
+      "step_num": 5,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "Sorry, this user has been locked out",
+      "expected": "계정 잠김 알림 에러 확인"
+    }
+  },
+  {
+    "tc_id": "TC-007",
+    "title": "존재하지 않는 미등록 계정 로그인 차단 검증",
+    "category": "인증",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 2.11,
+    "screenshot": "artifacts/screenshots\\TC-007_fail.png",
+    "error_details": "기대값 '미등록 계정 불일치 에러 확인' vs 실제값 'Epic sadface: Username and password do not match any user in this service' 불일치",
+    "failed_step": {
+      "step_num": 5,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "Username and password do not match",
+      "expected": "미등록 계정 불일치 에러 확인"
+    }
+  },
+  {
+    "tc_id": "TC-008",
+    "title": "아이디 대소문자 구분 및 민감도 검증",
+    "category": "인증",
+    "priority": "P2",
+    "status": "FAIL",
+    "elapsed_seconds": 2.12,
+    "screenshot": "artifacts/screenshots\\TC-008_fail.png",
+    "error_details": "기대값 '대소문자 불일치 에러 노출 확인' vs 실제값 'Epic sadface: Username and password do not match any user in this service' 불일치",
+    "failed_step": {
+      "step_num": 5,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "Username and password do not match",
+      "expected": "대소문자 불일치 에러 노출 확인"
+    }
+  },
+  {
+    "tc_id": "TC-009",
+    "title": "아이디 앞뒤 공백 포함 시 트림(Trim) 처리 검증",
+    "category": "인증",
+    "priority": "P2",
+    "status": "FAIL",
+    "elapsed_seconds": 7.15,
+    "screenshot": "artifacts/screenshots\\TC-009_fail.png",
+    "error_details": "Page.wait_for_selector: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='error']\") to be visible\n",
+    "failed_step": {
+      "step_num": 5,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "Username and password do not match",
+      "expected": "공백 미트림에 따른 로그인 실패 확인"
+    }
+  },
+  {
+    "tc_id": "TC-010",
+    "title": "로그인 입력창 SQL Injection 문자열 차단 검증",
+    "category": "보안",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 2.14,
+    "screenshot": "artifacts/screenshots\\TC-010_fail.png",
+    "error_details": "기대값 '인젝션 차단 및 일반 에러 노출' vs 실제값 'Epic sadface: Username and password do not match any user in this service' 불일치",
+    "failed_step": {
+      "step_num": 5,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "Username and password do not match",
+      "expected": "인젝션 차단 및 일반 에러 노출"
+    }
+  },
+  {
+    "tc_id": "TC-011",
+    "title": "로그인 입력창 XSS 스크립트 태그 처리 검증",
+    "category": "보안",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 2.14,
+    "screenshot": "artifacts/screenshots\\TC-011_fail.png",
+    "error_details": "기대값 '스크립트 미실행 및 안전한 에러 출력' vs 실제값 'Epic sadface: Username and password do not match any user in this service' 불일치",
+    "failed_step": {
+      "step_num": 5,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "Username and password do not match",
+      "expected": "스크립트 미실행 및 안전한 에러 출력"
+    }
+  },
+  {
+    "tc_id": "TC-012",
+    "title": "로그인 에러 메시지 닫기(X) 버튼 인터랙션 검증",
+    "category": "UI/UX",
+    "priority": "P2",
+    "status": "PASS",
+    "elapsed_seconds": 1.63,
+    "screenshot": "artifacts/screenshots\\TC-012_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-013",
+    "title": "비인증 상태에서 /inventory.html 직접 URL 접근 차단",
+    "category": "보안",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 5.57,
+    "screenshot": "artifacts/screenshots\\TC-013_fail.png",
+    "error_details": "Page.wait_for_selector: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='error']\") to be visible\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "You can only access '/inventory.html' when you are logged in",
+      "expected": "비인가 접근 차단 안내 확인"
+    }
+  },
+  {
+    "tc_id": "TC-014",
+    "title": "비인증 상태에서 /cart.html 직접 URL 접근 차단",
+    "category": "보안",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 5.54,
+    "screenshot": "artifacts/screenshots\\TC-014_fail.png",
+    "error_details": "Page.wait_for_selector: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='error']\") to be visible\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "You can only access '/cart.html' when you are logged in",
+      "expected": "접근 차단 및 로그인 리다이렉트"
+    }
+  },
+  {
+    "tc_id": "TC-015",
+    "title": "비인증 상태에서 /checkout-step-one.html 직접 접근 차단",
+    "category": "보안",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 5.57,
+    "screenshot": "artifacts/screenshots\\TC-015_fail.png",
+    "error_details": "Page.wait_for_selector: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='error']\") to be visible\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "when you are logged in",
+      "expected": "결제 1단계 접근 차단 에러 확인"
+    }
+  },
+  {
+    "tc_id": "TC-016",
+    "title": "사이드바 메뉴를 통한 정상 로그아웃 세션 만료 검증",
+    "category": "인증",
+    "priority": "P0",
+    "status": "PASS",
+    "elapsed_seconds": 3.24,
+    "screenshot": "artifacts/screenshots\\TC-016_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-017",
+    "title": "로그아웃 후 브라우저 뒤로가기(Back) 세션 재진입 차단",
+    "category": "보안",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 8.27,
+    "screenshot": "artifacts/screenshots\\TC-017_fail.png",
+    "error_details": "Page.wait_for_selector: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='error']\") to be visible\n",
+    "failed_step": {
+      "step_num": 8,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "when you are logged in",
+      "expected": "세션 만료로 인한 뒤로가기 차단 확인"
+    }
+  },
+  {
+    "tc_id": "TC-018",
+    "title": "비밀번호 입력 필드 마스킹(type=password) 보안 속성 검증",
+    "category": "인증",
+    "priority": "P2",
+    "status": "PASS",
+    "elapsed_seconds": 0.52,
+    "screenshot": "artifacts/screenshots\\TC-018_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-019",
+    "title": "지연 계정(performance_glitch_user) 명시적 대기 처리 검증",
+    "category": "성능",
+    "priority": "P1",
+    "status": "PASS",
+    "elapsed_seconds": 2.1,
+    "screenshot": "artifacts/screenshots\\TC-019_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-020",
+    "title": "버그 계정(error_user) 로그인 후 기본 UI 로딩 검증",
+    "category": "결함검증",
+    "priority": "P2",
+    "status": "FAIL",
+    "elapsed_seconds": 2.2,
+    "screenshot": "artifacts/screenshots\\TC-020_fail.png",
+    "error_details": "기대값 '상품 목록 타이틀 정상 렌더링 확인' vs 실제값 'Products' 불일치",
+    "failed_step": {
+      "step_num": 5,
+      "action": "assert_text",
+      "selector": ".title",
+      "val": "Products",
+      "expected": "상품 목록 타이틀 정상 렌더링 확인"
+    }
+  },
+  {
+    "tc_id": "TC-021",
+    "title": "기본 상품 목록 총 6개 아이템 렌더링 수량 검증",
+    "category": "인벤토리",
+    "priority": "P0",
+    "status": "PASS",
+    "elapsed_seconds": 0.56,
+    "screenshot": "artifacts/screenshots\\TC-021_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-022",
+    "title": "각 상품 카드 필수 구성요소(이미지, 타이틀, 설명, 가격, 버튼) 검증",
+    "category": "인벤토리",
+    "priority": "P1",
+    "status": "PASS",
+    "elapsed_seconds": 0.54,
+    "screenshot": "artifacts/screenshots\\TC-022_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-023",
+    "title": "기본 정렬 기본값(A to Z) 설정 상태 확인",
+    "category": "인벤토리",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 0.56,
+    "screenshot": "artifacts/screenshots\\TC-023_fail.png",
+    "error_details": "기대값 '기본 정렬 활성 옵션 확인' vs 실제값 'Name (A to Z)' 불일치",
+    "failed_step": {
+      "step_num": 2,
+      "action": "assert_text",
+      "selector": "[data-test='active-option']",
+      "val": "Name (A to Z)",
+      "expected": "기본 정렬 활성 옵션 확인"
+    }
+  },
+  {
+    "tc_id": "TC-024",
+    "title": "상품 이름 내림차순(Name: Z to A) 정렬 동작 검증",
+    "category": "인벤토리",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 0.57,
+    "screenshot": "artifacts/screenshots\\TC-024_fail.png",
+    "error_details": "기대값 '첫 번째 상품 Z 정렬 확인' vs 실제값 'Sauce Labs Backpack' 불일치",
+    "failed_step": {
+      "step_num": 3,
+      "action": "assert_text",
+      "selector": ".inventory_item:first-child .inventory_item_name",
+      "val": "Test.allTheThings() T-Shirt (Red)",
+      "expected": "첫 번째 상품 Z 정렬 확인"
+    }
+  },
+  {
+    "tc_id": "TC-025",
+    "title": "상품 이름 오름차순(Name: A to Z) 재정렬 동작 검증",
+    "category": "인벤토리",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 0.59,
+    "screenshot": "artifacts/screenshots\\TC-025_fail.png",
+    "error_details": "기대값 '첫 번째 상품 A 정렬 복귀 확인' vs 실제값 'Sauce Labs Backpack' 불일치",
+    "failed_step": {
+      "step_num": 4,
+      "action": "assert_text",
+      "selector": ".inventory_item:first-child .inventory_item_name",
+      "val": "Sauce Labs Backpack",
+      "expected": "첫 번째 상품 A 정렬 복귀 확인"
+    }
+  },
+  {
+    "tc_id": "TC-026",
+    "title": "가격 낮은 순(Price: low to high) 정렬 동작 검증",
+    "category": "인벤토리",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 0.58,
+    "screenshot": "artifacts/screenshots\\TC-026_fail.png",
+    "error_details": "기대값 '최저가 $7.99 상품 선두 노출 확인' vs 실제값 '$29.99' 불일치",
+    "failed_step": {
+      "step_num": 3,
+      "action": "assert_text",
+      "selector": ".inventory_item:first-child .inventory_item_price",
+      "val": "$7.99",
+      "expected": "최저가 $7.99 상품 선두 노출 확인"
+    }
+  },
+  {
+    "tc_id": "TC-027",
+    "title": "가격 높은 순(Price: high to low) 정렬 동작 검증",
+    "category": "인벤토리",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 0.56,
+    "screenshot": "artifacts/screenshots\\TC-027_fail.png",
+    "error_details": "기대값 '최고가 $49.99 상품 선두 노출 확인' vs 실제값 '$29.99' 불일치",
+    "failed_step": {
+      "step_num": 3,
+      "action": "assert_text",
+      "selector": ".inventory_item:first-child .inventory_item_price",
+      "val": "$49.99",
+      "expected": "최고가 $49.99 상품 선두 노출 확인"
+    }
+  },
+  {
+    "tc_id": "TC-028",
+    "title": "상품 카드 가격 통화 기호($) 및 소수점 2자리 포맷 검증",
+    "category": "인벤토리",
+    "priority": "P2",
+    "status": "PASS",
+    "elapsed_seconds": 0.54,
+    "screenshot": "artifacts/screenshots\\TC-028_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-029",
+    "title": "인벤토리 화면에서 단일 상품 Add to cart 버튼 클릭 시 상태 토글",
+    "category": "인벤토리",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 1.11,
+    "screenshot": "artifacts/screenshots\\TC-029_fail.png",
+    "error_details": "기대값 '버튼 텍스트 Remove로 변경 확인' vs 실제값 'Remove' 불일치",
+    "failed_step": {
+      "step_num": 3,
+      "action": "assert_text",
+      "selector": "[data-test='remove-sauce-labs-backpack']",
+      "val": "Remove",
+      "expected": "버튼 텍스트 Remove로 변경 확인"
+    }
+  },
+  {
+    "tc_id": "TC-030",
+    "title": "인벤토리 화면에서 Remove 버튼 클릭 시 취소 및 버튼 원복 검증",
+    "category": "인벤토리",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 31.06,
+    "screenshot": "artifacts/screenshots\\TC-030_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "Backpack 담기 클릭"
+    }
+  },
+  {
+    "tc_id": "TC-031",
+    "title": "상품 1개 추가 시 헤더 장바구니 뱃지 숫자 1 표시 검증",
+    "category": "인벤토리",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 31.07,
+    "screenshot": "artifacts/screenshots\\TC-031_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "상품 1개 추가"
+    }
+  },
+  {
+    "tc_id": "TC-032",
+    "title": "상품 3개 연속 추가 시 카트 뱃지 숫자 3 누적 검증",
+    "category": "인벤토리",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 31.07,
+    "screenshot": "artifacts/screenshots\\TC-032_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "상품 1 추가"
+    }
+  },
+  {
+    "tc_id": "TC-033",
+    "title": "전체 6개 상품 모두 추가 시 카트 뱃지 숫자 6 표시 검증",
+    "category": "인벤토리",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 31.05,
+    "screenshot": "artifacts/screenshots\\TC-033_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "상품 1 추가"
+    }
+  },
+  {
+    "tc_id": "TC-034",
+    "title": "상품 제거 후 뱃지 수량 감소 검증",
+    "category": "인벤토리",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 31.07,
+    "screenshot": "artifacts/screenshots\\TC-034_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "상품 1 추가"
+    }
+  },
+  {
+    "tc_id": "TC-035",
+    "title": "모든 상품 제거 시 카트 뱃지 엘리먼트 제거 검증",
+    "category": "인벤토리",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 31.07,
+    "screenshot": "artifacts/screenshots\\TC-035_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "상품 1 추가"
+    }
+  },
+  {
+    "tc_id": "TC-036",
+    "title": "problem_user 로그인 시 상품 이미지 깨짐/동일 이미지 결함 감지",
+    "category": "결함검증",
+    "priority": "P2",
+    "status": "PASS",
+    "elapsed_seconds": 2.14,
+    "screenshot": "artifacts/screenshots\\TC-036_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-037",
+    "title": "상품 타이틀 클릭 시 해당 상세 페이지로 라우팅 검증",
+    "category": "인벤토리",
+    "priority": "P0",
+    "status": "PASS",
+    "elapsed_seconds": 1.12,
+    "screenshot": "artifacts/screenshots\\TC-037_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-038",
+    "title": "상품 썸네일 이미지 클릭 시 상세 페이지로 라우팅 검증",
+    "category": "인벤토리",
+    "priority": "P1",
+    "status": "PASS",
+    "elapsed_seconds": 1.12,
+    "screenshot": "artifacts/screenshots\\TC-038_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-039",
+    "title": "정렬 옵션 변경 후 새로고침 시 정렬 상태 지속성/초기화 검증",
+    "category": "인벤토리",
+    "priority": "P2",
+    "status": "FAIL",
+    "elapsed_seconds": 0.85,
+    "screenshot": "artifacts/screenshots\\TC-039_fail.png",
+    "error_details": "기대값 '새로고침 시 기본 정렬 복귀 확인' vs 실제값 'Name (A to Z)' 불일치",
+    "failed_step": {
+      "step_num": 4,
+      "action": "assert_text",
+      "selector": "[data-test='active-option']",
+      "val": "Name (A to Z)",
+      "expected": "새로고침 시 기본 정렬 복귀 확인"
+    }
+  },
+  {
+    "tc_id": "TC-040",
+    "title": "헤더 장바구니 아이콘 클릭 시 카트 페이지 이동 검증",
+    "category": "인벤토리",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 1.11,
+    "screenshot": "artifacts/screenshots\\TC-040_fail.png",
+    "error_details": "기대값 '장바구니 페이지 타이틀 진입 확인' vs 실제값 'Your Cart' 불일치",
+    "failed_step": {
+      "step_num": 3,
+      "action": "assert_text",
+      "selector": ".title",
+      "val": "Your Cart",
+      "expected": "장바구니 페이지 타이틀 진입 확인"
+    }
+  },
+  {
+    "tc_id": "TC-041",
+    "title": "상품 상세 화면 구성요소(이름, 상세설명, 가격, 이미지) 일치 검증",
+    "category": "상세페이지",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 0.57,
+    "screenshot": "artifacts/screenshots\\TC-041_fail.png",
+    "error_details": "기대값 '상품명 일치 확인' vs 실제값 'Sauce Labs Backpack' 불일치",
+    "failed_step": {
+      "step_num": 2,
+      "action": "assert_text",
+      "selector": ".inventory_details_name",
+      "val": "Sauce Labs Backpack",
+      "expected": "상품명 일치 확인"
+    }
+  },
+  {
+    "tc_id": "TC-042",
+    "title": "상세 화면에서 Add to cart 클릭 시 카트 뱃지 증가 및 버튼 전환",
+    "category": "상세페이지",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 31.05,
+    "screenshot": "artifacts/screenshots\\TC-042_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "상세에서 담기 클릭"
+    }
+  },
+  {
+    "tc_id": "TC-043",
+    "title": "상세 화면에서 Remove 클릭 시 카트 뱃지 제거 및 버튼 복귀",
+    "category": "상세페이지",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 31.06,
+    "screenshot": "artifacts/screenshots\\TC-043_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "담기 클릭"
+    }
+  },
+  {
+    "tc_id": "TC-044",
+    "title": "Back to products 버튼 클릭 시 인벤토리 목록 복귀 검증",
+    "category": "상세페이지",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 1.16,
+    "screenshot": "artifacts/screenshots\\TC-044_fail.png",
+    "error_details": "기대값 '인벤토리 목록 페이지 복귀 확인' vs 실제값 'Products' 불일치",
+    "failed_step": {
+      "step_num": 3,
+      "action": "assert_text",
+      "selector": ".title",
+      "val": "Products",
+      "expected": "인벤토리 목록 페이지 복귀 확인"
+    }
+  },
+  {
+    "tc_id": "TC-045",
+    "title": "목록에서 담은 상품의 상세 진입 시 Remove 상태 동기화 검증",
+    "category": "상세페이지",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 31.05,
+    "screenshot": "artifacts/screenshots\\TC-045_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "목록에서 담기"
+    }
+  },
+  {
+    "tc_id": "TC-046",
+    "title": "Bike Light(id=0) 상세 정보 및 가격 검증",
+    "category": "상세페이지",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 0.59,
+    "screenshot": "artifacts/screenshots\\TC-046_fail.png",
+    "error_details": "기대값 '상품명 확인' vs 실제값 'Sauce Labs Bike Light' 불일치",
+    "failed_step": {
+      "step_num": 2,
+      "action": "assert_text",
+      "selector": ".inventory_details_name",
+      "val": "Sauce Labs Bike Light",
+      "expected": "상품명 확인"
+    }
+  },
+  {
+    "tc_id": "TC-047",
+    "title": "Bolt T-Shirt(id=1) 상세 정보 및 가격 검증",
+    "category": "상세페이지",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 0.57,
+    "screenshot": "artifacts/screenshots\\TC-047_fail.png",
+    "error_details": "기대값 '상품명 확인' vs 실제값 'Sauce Labs Bolt T-Shirt' 불일치",
+    "failed_step": {
+      "step_num": 2,
+      "action": "assert_text",
+      "selector": ".inventory_details_name",
+      "val": "Sauce Labs Bolt T-Shirt",
+      "expected": "상품명 확인"
+    }
+  },
+  {
+    "tc_id": "TC-048",
+    "title": "Fleece Jacket(id=5) 상세 정보 및 최고가 검증",
+    "category": "상세페이지",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 0.58,
+    "screenshot": "artifacts/screenshots\\TC-048_fail.png",
+    "error_details": "기대값 '상품명 확인' vs 실제값 'Sauce Labs Fleece Jacket' 불일치",
+    "failed_step": {
+      "step_num": 2,
+      "action": "assert_text",
+      "selector": ".inventory_details_name",
+      "val": "Sauce Labs Fleece Jacket",
+      "expected": "상품명 확인"
+    }
+  },
+  {
+    "tc_id": "TC-049",
+    "title": "Onesie(id=2) 상세 정보 및 최저가 검증",
+    "category": "상세페이지",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 0.59,
+    "screenshot": "artifacts/screenshots\\TC-049_fail.png",
+    "error_details": "기대값 '상품명 확인' vs 실제값 'Sauce Labs Onesie' 불일치",
+    "failed_step": {
+      "step_num": 2,
+      "action": "assert_text",
+      "selector": ".inventory_details_name",
+      "val": "Sauce Labs Onesie",
+      "expected": "상품명 확인"
+    }
+  },
+  {
+    "tc_id": "TC-050",
+    "title": "존재하지 않는 상품 id 파라미터 URL 예외 처리 검증",
+    "category": "상세페이지",
+    "priority": "P2",
+    "status": "FAIL",
+    "elapsed_seconds": 0.58,
+    "screenshot": "artifacts/screenshots\\TC-050_fail.png",
+    "error_details": "기대값 '미존재 상품 에러/안내 노출 검증' vs 실제값 'ITEM NOT FOUND' 불일치",
+    "failed_step": {
+      "step_num": 2,
+      "action": "assert_text",
+      "selector": ".inventory_details_name",
+      "val": "ITEM NOT FOUND",
+      "expected": "미존재 상품 에러/안내 노출 검증"
+    }
+  },
+  {
+    "tc_id": "TC-051",
+    "title": "담은 상품이 카트 목록(cart.html)에 정상 표시되는지 검증",
+    "category": "장바구니",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 31.07,
+    "screenshot": "artifacts/screenshots\\TC-051_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "Backpack 담기"
+    }
+  },
+  {
+    "tc_id": "TC-052",
+    "title": "카트 내에서 Remove 버튼 클릭 시 상품 삭제 검증",
+    "category": "장바구니",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 31.07,
+    "screenshot": "artifacts/screenshots\\TC-052_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "Backpack 담기"
+    }
+  },
+  {
+    "tc_id": "TC-053",
+    "title": "복수 상품 담긴 카트에서 특정 1개 상품만 선별 삭제 검증",
+    "category": "장바구니",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 31.06,
+    "screenshot": "artifacts/screenshots\\TC-053_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "Backpack 담기"
+    }
+  },
+  {
+    "tc_id": "TC-054",
+    "title": "빈 장바구니에서 Continue Shopping 클릭 시 인벤토리 복귀",
+    "category": "장바구니",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 1.16,
+    "screenshot": "artifacts/screenshots\\TC-054_fail.png",
+    "error_details": "기대값 '인벤토리 복귀 확인' vs 실제값 'Products' 불일치",
+    "failed_step": {
+      "step_num": 3,
+      "action": "assert_text",
+      "selector": ".title",
+      "val": "Products",
+      "expected": "인벤토리 복귀 확인"
+    }
+  },
+  {
+    "tc_id": "TC-055",
+    "title": "상품 담긴 상태에서 Continue Shopping 클릭 후 이전 상태 유지 검증",
+    "category": "장바구니",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 31.06,
+    "screenshot": "artifacts/screenshots\\TC-055_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "Backpack 담기"
+    }
+  },
+  {
+    "tc_id": "TC-056",
+    "title": "카트 내 상품명 클릭 시 해당 상품 상세 화면으로 이동 검증",
+    "category": "장바구니",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 31.07,
+    "screenshot": "artifacts/screenshots\\TC-056_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "Backpack 담기"
+    }
+  },
+  {
+    "tc_id": "TC-057",
+    "title": "상품이 담긴 상태에서 Checkout 버튼 클릭 시 결제 1단계 진입",
+    "category": "장바구니",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 31.07,
+    "screenshot": "artifacts/screenshots\\TC-057_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "Backpack 담기"
+    }
+  },
+  {
+    "tc_id": "TC-058",
+    "title": "빈 장바구니에서 Checkout 클릭 시 동작(방어 로직 검증)",
+    "category": "장바구니",
+    "priority": "P2",
+    "status": "PASS",
+    "elapsed_seconds": 1.11,
+    "screenshot": "artifacts/screenshots\\TC-058_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-059",
+    "title": "장바구니 목록 가격과 인벤토리 가격 일치 여부 검증",
+    "category": "장바구니",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 31.06,
+    "screenshot": "artifacts/screenshots\\TC-059_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "Backpack($29.99) 담기"
+    }
+  },
+  {
+    "tc_id": "TC-060",
+    "title": "카트 수량 컬럼 기본값 1 고정 표시 검증",
+    "category": "장바구니",
+    "priority": "P2",
+    "status": "FAIL",
+    "elapsed_seconds": 31.07,
+    "screenshot": "artifacts/screenshots\\TC-060_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "상품 담기"
+    }
+  },
+  {
+    "tc_id": "TC-061",
+    "title": "동일 상품 중복 추가 시 수량 증가 여부(시스템 사양 확인)",
+    "category": "장바구니",
+    "priority": "P2",
+    "status": "FAIL",
+    "elapsed_seconds": 31.08,
+    "screenshot": "artifacts/screenshots\\TC-061_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "1회 담기"
+    }
+  },
+  {
+    "tc_id": "TC-062",
+    "title": "브라우저 새로고침(F5) 시 장바구니 세션 상태 유지 검증",
+    "category": "장바구니",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 31.07,
+    "screenshot": "artifacts/screenshots\\TC-062_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "상품 담기"
+    }
+  },
+  {
+    "tc_id": "TC-063",
+    "title": "사이드바 All Items 클릭 시 인벤토리 복귀 및 카트 유지",
+    "category": "장바구니",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 1.71,
+    "screenshot": "artifacts/screenshots\\TC-063_fail.png",
+    "error_details": "기대값 '상품 목록 복귀 확인' vs 실제값 'Products' 불일치",
+    "failed_step": {
+      "step_num": 4,
+      "action": "assert_text",
+      "selector": ".title",
+      "val": "Products",
+      "expected": "상품 목록 복귀 확인"
+    }
+  },
+  {
+    "tc_id": "TC-064",
+    "title": "사이드바 Reset App State 클릭 시 카트 비우기 검증",
+    "category": "장바구니",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 31.08,
+    "screenshot": "artifacts/screenshots\\TC-064_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "상품 담기"
+    }
+  },
+  {
+    "tc_id": "TC-065",
+    "title": "카트 테이블 헤더 QTY 및 Description 라벨 노출 확인",
+    "category": "장바구니",
+    "priority": "P2",
+    "status": "FAIL",
+    "elapsed_seconds": 0.76,
+    "screenshot": "artifacts/screenshots\\TC-065_fail.png",
+    "error_details": "기대값 '수량 라벨 노출' vs 실제값 'QTY' 불일치",
+    "failed_step": {
+      "step_num": 2,
+      "action": "assert_text",
+      "selector": ".cart_quantity_label",
+      "val": "QTY",
+      "expected": "수량 라벨 노출"
+    }
+  },
+  {
+    "tc_id": "TC-066",
+    "title": "정상 배송 정보 입력 후 결제 2단계(개요) 진입 검증",
+    "category": "체크아웃",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 2.67,
+    "screenshot": "artifacts/screenshots\\TC-066_fail.png",
+    "error_details": "기대값 '결제 2단계 Overview 진입' vs 실제값 'Checkout: Your Information' 불일치",
+    "failed_step": {
+      "step_num": 6,
+      "action": "assert_text",
+      "selector": ".title",
+      "val": "Checkout: Overview",
+      "expected": "결제 2단계 Overview 진입"
+    }
+  },
+  {
+    "tc_id": "TC-067",
+    "title": "First Name 빈값 상태에서 Continue 클릭 시 에러 검증",
+    "category": "체크아웃",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 2.18,
+    "screenshot": "artifacts/screenshots\\TC-067_fail.png",
+    "error_details": "기대값 '이름 필수 입력 에러 노출' vs 실제값 'Error: Last Name is required' 불일치",
+    "failed_step": {
+      "step_num": 5,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "First Name is required",
+      "expected": "이름 필수 입력 에러 노출"
+    }
+  },
+  {
+    "tc_id": "TC-068",
+    "title": "Last Name 빈값 상태에서 Continue 클릭 시 에러 검증",
+    "category": "체크아웃",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 2.13,
+    "screenshot": "artifacts/screenshots\\TC-068_fail.png",
+    "error_details": "기대값 '성 필수 입력 에러 노출' vs 실제값 'Error: Last Name is required' 불일치",
+    "failed_step": {
+      "step_num": 5,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "Last Name is required",
+      "expected": "성 필수 입력 에러 노출"
+    }
+  },
+  {
+    "tc_id": "TC-069",
+    "title": "Postal Code 빈값 상태에서 Continue 클릭 시 에러 검증",
+    "category": "체크아웃",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 2.13,
+    "screenshot": "artifacts/screenshots\\TC-069_fail.png",
+    "error_details": "기대값 '우편번호 필수 입력 에러 노출' vs 실제값 'Error: Last Name is required' 불일치",
+    "failed_step": {
+      "step_num": 5,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "Postal Code is required",
+      "expected": "우편번호 필수 입력 에러 노출"
+    }
+  },
+  {
+    "tc_id": "TC-070",
+    "title": "모든 배송 필드 빈값 상태에서 Continue 클릭 시 우선순위 에러",
+    "category": "체크아웃",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 1.11,
+    "screenshot": "artifacts/screenshots\\TC-070_fail.png",
+    "error_details": "기대값 '첫 번째 필드인 이름 에러 최우선 노출' vs 실제값 'Error: First Name is required' 불일치",
+    "failed_step": {
+      "step_num": 3,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "First Name is required",
+      "expected": "첫 번째 필드인 이름 에러 최우선 노출"
+    }
+  },
+  {
+    "tc_id": "TC-071",
+    "title": "결제 1단계에서 Cancel 버튼 클릭 시 카트 페이지 복귀 검증",
+    "category": "체크아웃",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 1.11,
+    "screenshot": "artifacts/screenshots\\TC-071_fail.png",
+    "error_details": "기대값 '카트 페이지 복귀 확인' vs 실제값 'Your Cart' 불일치",
+    "failed_step": {
+      "step_num": 3,
+      "action": "assert_text",
+      "selector": ".title",
+      "val": "Your Cart",
+      "expected": "카트 페이지 복귀 확인"
+    }
+  },
+  {
+    "tc_id": "TC-072",
+    "title": "배송 정보에 특수문자 입력 시 정상 수용 검증",
+    "category": "체크아웃",
+    "priority": "P2",
+    "status": "FAIL",
+    "elapsed_seconds": 2.64,
+    "screenshot": "artifacts/screenshots\\TC-072_fail.png",
+    "error_details": "기대값 '특수문자 정상 처리 및 다음 단계 이동' vs 실제값 'Checkout: Your Information' 불일치",
+    "failed_step": {
+      "step_num": 6,
+      "action": "assert_text",
+      "selector": ".title",
+      "val": "Checkout: Overview",
+      "expected": "특수문자 정상 처리 및 다음 단계 이동"
+    }
+  },
+  {
+    "tc_id": "TC-073",
+    "title": "배송 정보 공백(Space)만 입력 시 유효성 검증",
+    "category": "체크아웃",
+    "priority": "P2",
+    "status": "PASS",
+    "elapsed_seconds": 2.63,
+    "screenshot": "artifacts/screenshots\\TC-073_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-074",
+    "title": "결제 2단계: 주문 요약 상품 목록 및 수량 일치 검증",
+    "category": "체크아웃",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 0.57,
+    "screenshot": "artifacts/screenshots\\TC-074_fail.png",
+    "error_details": "기대값 '결제 정보 라벨 확인' vs 실제값 'Payment Information:' 불일치",
+    "failed_step": {
+      "step_num": 3,
+      "action": "assert_text",
+      "selector": ".summary_info_label:nth-of-type(1)",
+      "val": "Payment Information:",
+      "expected": "결제 정보 라벨 확인"
+    }
+  },
+  {
+    "tc_id": "TC-075",
+    "title": "결제 2단계: Payment Information 카드 정보 표기 확인",
+    "category": "체크아웃",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 5.54,
+    "screenshot": "artifacts/screenshots\\TC-075_fail.png",
+    "error_details": "Page.wait_for_selector: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\".summary_value_label:nth-of-type(1)\") to be visible\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "assert_text",
+      "selector": ".summary_value_label:nth-of-type(1)",
+      "val": "SauceCard #31337",
+      "expected": "기본 지정 결제 카드 일치"
+    }
+  },
+  {
+    "tc_id": "TC-076",
+    "title": "결제 2단계: Shipping Information 배송 방식 표기 확인",
+    "category": "체크아웃",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 0.57,
+    "screenshot": "artifacts/screenshots\\TC-076_fail.png",
+    "error_details": "기대값 '배송 옵션 표기 일치' vs 실제값 'SauceCard #31337' 불일치",
+    "failed_step": {
+      "step_num": 2,
+      "action": "assert_text",
+      "selector": ".summary_value_label:nth-of-type(2)",
+      "val": "Free Pony Express Delivery!",
+      "expected": "배송 옵션 표기 일치"
+    }
+  },
+  {
+    "tc_id": "TC-077",
+    "title": "결제 2단계: 단일 상품 아이템 소계(Item total) 계산 정확도 검증",
+    "category": "체크아웃",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 31.06,
+    "screenshot": "artifacts/screenshots\\TC-077_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "Backpack($29.99) 담기"
+    }
+  },
+  {
+    "tc_id": "TC-078",
+    "title": "결제 2단계: 8% 세율(Tax) 자동 계산 정확도 검증",
+    "category": "체크아웃",
+    "priority": "P0",
+    "status": "PASS",
+    "elapsed_seconds": 0.55,
+    "screenshot": "artifacts/screenshots\\TC-078_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-079",
+    "title": "결제 2단계: 총 결제 금액(Total = Item total + Tax) 합산 검증",
+    "category": "체크아웃",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 0.58,
+    "screenshot": "artifacts/screenshots\\TC-079_fail.png",
+    "error_details": "기대값 '소계+세금($29.99+$2.40=$32.39) 총액 일치' vs 실제값 'Total: $64.78' 불일치",
+    "failed_step": {
+      "step_num": 2,
+      "action": "assert_text",
+      "selector": ".summary_total_label",
+      "val": "Total: $32.39",
+      "expected": "소계+세금($29.99+$2.40=$32.39) 총액 일치"
+    }
+  },
+  {
+    "tc_id": "TC-080",
+    "title": "결제 2단계에서 Cancel 버튼 클릭 시 인벤토리 복귀 검증",
+    "category": "체크아웃",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 1.13,
+    "screenshot": "artifacts/screenshots\\TC-080_fail.png",
+    "error_details": "기대값 '인벤토리 목록 페이지 복귀 확인' vs 실제값 'Products' 불일치",
+    "failed_step": {
+      "step_num": 3,
+      "action": "assert_text",
+      "selector": ".title",
+      "val": "Products",
+      "expected": "인벤토리 목록 페이지 복귀 확인"
+    }
+  },
+  {
+    "tc_id": "TC-081",
+    "title": "Finish 버튼 클릭 시 최종 주문 완료 페이지 라우팅 검증",
+    "category": "체크아웃",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 1.13,
+    "screenshot": "artifacts/screenshots\\TC-081_fail.png",
+    "error_details": "기대값 '주문 완료 화면 타이틀 확인' vs 실제값 'Checkout: Complete!' 불일치",
+    "failed_step": {
+      "step_num": 3,
+      "action": "assert_text",
+      "selector": ".title",
+      "val": "Checkout: Complete!",
+      "expected": "주문 완료 화면 타이틀 확인"
+    }
+  },
+  {
+    "tc_id": "TC-082",
+    "title": "주문 완료 화면: 감사 메시지(THANK YOU FOR YOUR ORDER) 검증",
+    "category": "체크아웃",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 0.57,
+    "screenshot": "artifacts/screenshots\\TC-082_fail.png",
+    "error_details": "기대값 '최종 성공 완료 헤더 텍스트 확인' vs 실제값 'Thank you for your order!' 불일치",
+    "failed_step": {
+      "step_num": 2,
+      "action": "assert_text",
+      "selector": ".complete-header",
+      "val": "Thank you for your order!",
+      "expected": "최종 성공 완료 헤더 텍스트 확인"
+    }
+  },
+  {
+    "tc_id": "TC-083",
+    "title": "주문 완료 화면: 포니 익스프레스 배송 안내 문구 노출 검증",
+    "category": "체크아웃",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 0.59,
+    "screenshot": "artifacts/screenshots\\TC-083_fail.png",
+    "error_details": "기대값 '배송 출고 안내 문구 확인' vs 실제값 'Your order has been dispatched, and will arrive just as fast as the pony can get there!' 불일치",
+    "failed_step": {
+      "step_num": 2,
+      "action": "assert_text",
+      "selector": ".complete-text",
+      "val": "Your order has been dispatched",
+      "expected": "배송 출고 안내 문구 확인"
+    }
+  },
+  {
+    "tc_id": "TC-084",
+    "title": "주문 완료 후 Back Home 버튼 클릭 시 인벤토리 이동 검증",
+    "category": "체크아웃",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 1.12,
+    "screenshot": "artifacts/screenshots\\TC-084_fail.png",
+    "error_details": "기대값 '상품 목록 페이지 복귀 확인' vs 실제값 'Products' 불일치",
+    "failed_step": {
+      "step_num": 3,
+      "action": "assert_text",
+      "selector": ".title",
+      "val": "Products",
+      "expected": "상품 목록 페이지 복귀 확인"
+    }
+  },
+  {
+    "tc_id": "TC-085",
+    "title": "주문 완료 후 장바구니 뱃지 자동 비워짐(초기화) 검증",
+    "category": "체크아웃",
+    "priority": "P0",
+    "status": "PASS",
+    "elapsed_seconds": 0.54,
+    "screenshot": "artifacts/screenshots\\TC-085_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-086",
+    "title": "사이드바 메뉴 열기(햄버거 버튼) 인터랙션 검증",
+    "category": "네비게이션",
+    "priority": "P1",
+    "status": "PASS",
+    "elapsed_seconds": 1.09,
+    "screenshot": "artifacts/screenshots\\TC-086_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-087",
+    "title": "사이드바 닫기(X 버튼) 인터랙션 검증",
+    "category": "네비게이션",
+    "priority": "P1",
+    "status": "PASS",
+    "elapsed_seconds": 1.66,
+    "screenshot": "artifacts/screenshots\\TC-087_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-088",
+    "title": "사이드바 About 링크 클릭 시 Sauce Labs 공식 사이트 이동",
+    "category": "네비게이션",
+    "priority": "P1",
+    "status": "PASS",
+    "elapsed_seconds": 3.02,
+    "screenshot": "artifacts/screenshots\\TC-088_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-089",
+    "title": "푸터 트위터(X) SNS 링크 URL 및 새 창 타겟 속성 검증",
+    "category": "푸터",
+    "priority": "P2",
+    "status": "PASS",
+    "elapsed_seconds": 0.57,
+    "screenshot": "artifacts/screenshots\\TC-089_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-090",
+    "title": "푸터 페이스북(Facebook) SNS 링크 URL 및 새 창 검증",
+    "category": "푸터",
+    "priority": "P2",
+    "status": "PASS",
+    "elapsed_seconds": 0.54,
+    "screenshot": "artifacts/screenshots\\TC-090_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-091",
+    "title": "푸터 링크드인(LinkedIn) SNS 링크 URL 및 새 창 검증",
+    "category": "푸터",
+    "priority": "P2",
+    "status": "PASS",
+    "elapsed_seconds": 0.53,
+    "screenshot": "artifacts/screenshots\\TC-091_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-092",
+    "title": "푸터 카피라이트 텍스트 및 현재 연도 표기 검증",
+    "category": "푸터",
+    "priority": "P2",
+    "status": "FAIL",
+    "elapsed_seconds": 0.57,
+    "screenshot": "artifacts/screenshots\\TC-092_fail.png",
+    "error_details": "기대값 '카피라이트 문구 검증' vs 실제값 '© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy' 불일치",
+    "failed_step": {
+      "step_num": 2,
+      "action": "assert_text",
+      "selector": ".footer_copy",
+      "val": "Sauce Labs. All Rights Reserved.",
+      "expected": "카피라이트 문구 검증"
+    }
+  },
+  {
+    "tc_id": "TC-093",
+    "title": "모바일 해상도(390x844)에서 반응형 UI 레이아웃 검증",
+    "category": "반응형",
+    "priority": "P1",
+    "status": "PASS",
+    "elapsed_seconds": 0.54,
+    "screenshot": "artifacts/screenshots\\TC-093_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-094",
+    "title": "태블릿 해상도(768x1024)에서 네비게이션 및 그리드 검증",
+    "category": "반응형",
+    "priority": "P2",
+    "status": "PASS",
+    "elapsed_seconds": 0.53,
+    "screenshot": "artifacts/screenshots\\TC-094_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-095",
+    "title": "problem_user 체크아웃 시 성(Last Name) 입력 필드 잠김 결함 감지",
+    "category": "결함검증",
+    "priority": "P1",
+    "status": "PASS",
+    "elapsed_seconds": 3.67,
+    "screenshot": "artifacts/screenshots\\TC-095_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-096",
+    "title": "error_user 체크아웃 2단계 진입 시 에러 발생 감지",
+    "category": "결함검증",
+    "priority": "P1",
+    "status": "PASS",
+    "elapsed_seconds": 4.79,
+    "screenshot": "artifacts/screenshots\\TC-096_pass.png",
+    "error_details": "",
+    "failed_step": null
+  },
+  {
+    "tc_id": "TC-097",
+    "title": "지연 계정(performance_glitch) 장바구니 추가 응답성 검증",
+    "category": "성능",
+    "priority": "P2",
+    "status": "FAIL",
+    "elapsed_seconds": 32.64,
+    "screenshot": "artifacts/screenshots\\TC-097_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 5,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "장바구니 담기 클릭"
+    }
+  },
+  {
+    "tc_id": "TC-098",
+    "title": "브라우저 다중 탭 환경에서 장바구니 수량 동기화 검증",
+    "category": "상태유지",
+    "priority": "P2",
+    "status": "FAIL",
+    "elapsed_seconds": 31.28,
+    "screenshot": "artifacts/screenshots\\TC-098_fail.png",
+    "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
+    "failed_step": {
+      "step_num": 2,
+      "action": "click",
+      "selector": "[data-test='add-to-cart-sauce-labs-backpack']",
+      "val": "",
+      "expected": "탭 1에서 상품 추가"
+    }
+  },
+  {
+    "tc_id": "TC-099",
+    "title": "로그아웃 후 브라우저 캐시를 통한 주문 정보 잔존 여부 검증",
+    "category": "보안",
+    "priority": "P1",
+    "status": "FAIL",
+    "elapsed_seconds": 3.95,
+    "screenshot": "artifacts/screenshots\\TC-099_fail.png",
+    "error_details": "기대값 '개인정보 화면 접근 차단 확인' vs 실제값 'Epic sadface: You can only access '/checkout-step-two.html' when you are logged in.' 불일치",
+    "failed_step": {
+      "step_num": 5,
+      "action": "assert_text",
+      "selector": "[data-test='error']",
+      "val": "when you are logged in",
+      "expected": "개인정보 화면 접근 차단 확인"
+    }
+  },
+  {
+    "tc_id": "TC-100",
+    "title": "End-to-End 전체 풀 시나리오(로그인→검색/정렬→담기→결제→완료) 검증",
+    "category": "E2E",
+    "priority": "P0",
+    "status": "FAIL",
+    "elapsed_seconds": 13.71,
+    "screenshot": "artifacts/screenshots\\TC-100_fail.png",
+    "error_details": "기대값 '주문 금액 검증' vs 실제값 'Item total: $37.98' 불일치",
+    "failed_step": {
+      "step_num": 13,
+      "action": "assert_text",
+      "selector": ".summary_subtotal_label",
+      "val": "Item total: $7.99",
+      "expected": "주문 금액 검증"
+    }
+  }
+]
