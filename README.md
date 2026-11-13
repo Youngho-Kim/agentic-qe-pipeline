@@ -1,4 +1,5 @@
 # 🛡️ Agentic-QE Closed-Loop Platform
+[https://github.com/Youngho-Kim/agentic-qe-pipeline/actions/workflows/qe_ci.yml/badge.svg]
 
 > **배포 전 5단계 AI-QE 자동화 파이프라인(엑셀 DDT · Jira 중복방지 연동)과 배포 후 실시간 서비스 헬스체크 대시보드(Sentinel)가 하나로 순환하는 올인원 QE 플랫폼**
 

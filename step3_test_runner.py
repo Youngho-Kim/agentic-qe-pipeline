@@ -192,11 +192,12 @@ def run_approved_tests():
     print("=" * 65)
 
     browser_cfg = _cfg["browser"]
+    is_ci = os.getenv("CI", "").lower() == "true"
     with sync_playwright() as p:
         browser = p.chromium.launch(
-            headless=browser_cfg["headless"],
-            slow_mo=browser_cfg["slow_mo_ms"]
-        )
+            headless=True if is_ci else browser_cfg["headless"],
+            slow_mo=0 if is_ci else browser_cfg["slow_mo_ms"]
+        )   
         page = browser.new_page()
 
         for tc_id, data in test_cases.items():
