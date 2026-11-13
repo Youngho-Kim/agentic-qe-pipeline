@@ -7,6 +7,8 @@ from openpyxl import load_workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from playwright.sync_api import sync_playwright
 from config_loader import load_config
+import urllib.request
+import urllib.error
 
 _cfg = load_config()
 ARTIFACTS_DIR = _cfg["paths"]["artifacts_dir"]
@@ -155,6 +157,29 @@ def build_excel_result_report(approved_excel_path: str, output_excel_path: str, 
 
     wb.save(output_excel_path)
 
+def run_api_step(method: str, url_or_payload: str, expected_status_str: str, expected_body_kw: str):
+    expected_code = int(expected_status_str) if expected_status_str.isdigit() else (201 if method == "POST" else 200)
+    if "|" in url_or_payload:
+        url, body_str = url_or_payload.split("|", 1)
+        data = body_str.strip().encode("utf-8")
+    else:
+        url = url_or_payload.strip()
+        data = b"{}" if method == "POST" else None
+
+    headers = {"User-Agent": "Agentic-QE-API-Tester/1.0", "Content-Type": "application/json"}
+    req = urllib.request.Request(url.strip(), data=data, headers=headers, method=method)
+    try:
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            code = resp.getcode()
+            resp_text = resp.read().decode("utf-8", errors="ignore")
+    except urllib.error.HTTPError as e:
+        code = e.code
+        resp_text = e.read().decode("utf-8", errors="ignore")
+
+    assert code == expected_code, f"API 상태 코드 불일치 (기대: {expected_code}, 실제: {code})"
+    if expected_body_kw:
+        assert expected_body_kw in resp_text, f"API 응답 본문에 '{expected_body_kw}' 누락"
+
 def run_approved_tests():
     if not os.path.exists(APPROVED_EXCEL):
         print(f"❌ [에러] '{APPROVED_EXCEL}' 파일이 없습니다. 먼저 Step 2를 통과해야 합니다.")
@@ -224,6 +249,10 @@ def run_approved_tests():
                         page.wait_for_selector(selector, timeout=5000)
                         txt = page.text_content(selector)
                         assert expected in txt, f"기대값 '{expected}' vs 실제값 '{txt}' 불일치"
+                    elif action == "api_get":
+                        run_api_step("GET", val, selector, expected)
+                    elif action == "api_post":
+                        run_api_step("POST", val, selector, expected)
                 except Exception as e:
                     tc_pass = False
                     error_msg = str(e)
