@@ -1,0 +1,9 @@
+sentinel_monitor/
+├── monitor_config.json    # 외부 설정 파일
+├── config_manager.py      # [모듈 1] 설정 로드 및 저장  -  설정 관리
+├── probe_collector.py     # [모듈 2] URL 상태 및 응답속도(ms) 수집기  -  엔드포인트 수집기
+├── noise_filter.py        # [모듈 3] 오탐 필터링 상태 머신  -  오탐 필터링 상태 머신
+├── notifier.py            # [모듈 4] Slack 알림 및 마크다운 보고서 생성  -  Slack 알림 및 보고서
+├── dashboard_server.py    # [모듈 5] 웹 대시보드 UI 및 REST API 서버  -  웹 대시보드 & API 서버
+├── sentinel_app.py        # [마스터] 대시보드 실행 엔트리포인트  -  마스터 실행 파일
+└── run_monitor.bat        # [윈도우] 원클릭 실행 배치 파일

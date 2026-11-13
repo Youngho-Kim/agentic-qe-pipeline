@@ -11,5 +11,11 @@
     "headless": false,
     "slow_mo_ms": 500,
     "timeout_ms": 10000
+  },
+  "jira": {
+    "base_url": "https://.atlassian.net",
+    "email": "@gmail.com",
+    "api_token": "",
+    "project_key": ""
   }
 }

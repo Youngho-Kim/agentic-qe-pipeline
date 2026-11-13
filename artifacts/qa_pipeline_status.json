@@ -1,0 +1,21 @@
+{
+  "decision": "🔴 NO-GO (배포 보류 및 롤백)",
+  "pass_rate": 24.0,
+  "passed": 24,
+  "total": 100,
+  "tested_urls": [
+    "https://www.saucedemo.com/",
+    "https://www.saucedemo.com/inventory.html",
+    "https://www.saucedemo.com/cart.html",
+    "https://www.saucedemo.com/checkout-step-one.html",
+    "https://www.saucedemo.com/inventory-item.html?id=4",
+    "https://www.saucedemo.com/inventory-item.html?id=0",
+    "https://www.saucedemo.com/inventory-item.html?id=1",
+    "https://www.saucedemo.com/inventory-item.html?id=5",
+    "https://www.saucedemo.com/inventory-item.html?id=2",
+    "https://www.saucedemo.com/inventory-item.html?id=9999",
+    "https://www.saucedemo.com/checkout-step-two.html",
+    "https://www.saucedemo.com/checkout-complete.html"
+  ],
+  "updated_at": "2026-11-12 22:57:00"
+}

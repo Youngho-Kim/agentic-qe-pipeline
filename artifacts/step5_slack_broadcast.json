@@ -1,3 +1,32 @@
 {
-  "text": "🚀 [릴리즈 판정] 🔴 NO-GO (배포 보류) - 통과율 24.0% (24/100건)"
+  "blocks": [
+    {
+      "type": "header",
+      "text": {
+        "type": "plain_text",
+        "text": "🚀 [QE Pipeline] 최종 릴리즈 판정 알림"
+      }
+    },
+    {
+      "type": "section",
+      "fields": [
+        {
+          "type": "mrkdwn",
+          "text": "*최종 판정:*\n*🔴 NO-GO (배포 보류 및 롤백)*"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*테스트 통과율:*\n*24/100건 (24.0%)*"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*P0 장애 여부:*\n발생 (차단)"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*사인오프 일시:*\n2026-11-12 22:57"
+        }
+      ]
+    }
+  ]
 }

@@ -1,5 +1,0 @@
-python step1_tc_designer.py      # 1단계만 실행 -> artifacts/step1_design_report.md 확인
-python step2_quality_gate.py     # 2단계 심사 -> artifacts/step2_quality_gate_report.md 확인
-python step3_test_runner.py      # 3단계 브라우저 실행 -> artifacts/step3_execution_summary.md 확인
-python step4_defect_triage.py    # 4단계 결함 분석 -> artifacts/step4_triage_report.md 확인
-python step5_release_commander.py# 5단계 릴리즈 승인 -> artifacts/step5_release_signoff_report.md 확인

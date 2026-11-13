@@ -1,0 +1,65 @@
+{
+  "service_name": "팬딩(Fanding) 크리에이터 멤버십 및 유료 포스트 권한 제어",
+  "version": 2,
+  "test_cases": [
+    {
+      "tc_id": "TC-FANDING-001",
+      "title": "전체 공개 포스트 비로그인 접근 정상 열람",
+      "test_type": "Positive",
+      "priority": "P0",
+      "target_tier": "Free",
+      "steps": [
+        "크리에이터 홈 접속",
+        "전체 공개 포스트 영역 확인"
+      ],
+      "expected_result": "블라인드 없이 포스트 텍스트가 정상 노출됨"
+    },
+    {
+      "tc_id": "TC-FANDING-002",
+      "title": "일반 회원의 골드 전용 콘텐츠 접근 시 차단 배너 노출",
+      "test_type": "AccessControl",
+      "priority": "P0",
+      "target_tier": "Free",
+      "steps": [
+        "일반 회원으로 접속",
+        "골드 전용 포스트 확인"
+      ],
+      "expected_result": "콘텐츠가 블러 처리되고 '골드 팬 전용' 안내 배너가 뜸"
+    },
+    {
+      "tc_id": "TC-FANDING-003",
+      "title": "골드 멤버십 구독자의 VIP 전용 원본 콘텐츠 잠금 해제 검증",
+      "test_type": "AccessControl",
+      "priority": "P0",
+      "target_tier": "Gold",
+      "steps": [
+        "골드 회원 세션으로 접속",
+        "골드 포스트 확인"
+      ],
+      "expected_result": "블러 및 게이트 배너가 제거되고 원본 다운로드 링크가 활성화됨"
+    },
+    {
+      "tc_id": "TC-FANDING-004",
+      "title": "플랜 가격 초과 쿠폰 적용 시 음수 결제 방지(BVA 경계값) 검증",
+      "test_type": "Boundary",
+      "priority": "P0",
+      "target_tier": "Free",
+      "steps": [
+        "14,900원 골드 플랜 결제창 오픈",
+        "20,000원 할인 쿠폰 입력 후 적용"
+      ],
+      "expected_result": "최종 결제 금액이 마이너스가 아닌 정확히 '0원'으로 바운딩 처리됨"
+    },
+    {
+      "tc_id": "TC-FANDING-005",
+      "title": "정기 결제 실패 시 즉시 해지 차단 및 3일 유예(Grace Period) 배너 검증",
+      "test_type": "StateTransition",
+      "priority": "P1",
+      "target_tier": "Gold",
+      "steps": [
+        "정기 결제 실패 유저 상태로 접속"
+      ],
+      "expected_result": "상단에 '3일 결제 유예 안내 및 결제수단 갱신' 경고 배너가 정상 표시됨"
+    }
+  ]
+}

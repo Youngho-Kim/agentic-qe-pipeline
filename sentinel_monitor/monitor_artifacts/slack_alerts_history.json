@@ -1,0 +1,23 @@
+[
+  {
+    "event": "RECOVERED_ALERT",
+    "title": "✅ [복구 완료] 서비스 정상화",
+    "target": "[Demo] Payment API (실제장애)",
+    "message": "장애 상태에서 정상 서비스로 복구됨",
+    "timestamp": "2026-11-13 16:57:52"
+  },
+  {
+    "event": "QA_TRIGGER",
+    "title": "🛡️ [Closed-Loop] QA 정밀 E2E 회귀 테스트 자동 출동",
+    "target": "[Demo] Payment API (실제장애)",
+    "message": "Step 3 (Playwright) & Step 4 (결함 트리아지) 자동 실행 중...",
+    "timestamp": "2026-11-13 16:57:51"
+  },
+  {
+    "event": "CRITICAL_ALERT",
+    "title": "🚨 [장애 경보] 서비스 응답 불가 확정",
+    "target": "[Demo] Payment API (실제장애)",
+    "message": "연속 2회 실패 - 실제 장애 확정 (HTTP Error 500)",
+    "timestamp": "2026-11-13 16:57:51"
+  }
+]

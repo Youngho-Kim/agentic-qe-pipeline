@@ -1,0 +1,306 @@
+{
+  "TC-001": {
+    "issue_key": "KAN-77",
+    "url": "https://kwave55.atlassian.net/browse/KAN-77"
+  },
+  "TC-002": {
+    "issue_key": "KAN-78",
+    "url": "https://kwave55.atlassian.net/browse/KAN-78"
+  },
+  "TC-003": {
+    "issue_key": "KAN-79",
+    "url": "https://kwave55.atlassian.net/browse/KAN-79"
+  },
+  "TC-004": {
+    "issue_key": "KAN-80",
+    "url": "https://kwave55.atlassian.net/browse/KAN-80"
+  },
+  "TC-005": {
+    "issue_key": "KAN-81",
+    "url": "https://kwave55.atlassian.net/browse/KAN-81"
+  },
+  "TC-006": {
+    "issue_key": "KAN-82",
+    "url": "https://kwave55.atlassian.net/browse/KAN-82"
+  },
+  "TC-007": {
+    "issue_key": "KAN-83",
+    "url": "https://kwave55.atlassian.net/browse/KAN-83"
+  },
+  "TC-008": {
+    "issue_key": "KAN-84",
+    "url": "https://kwave55.atlassian.net/browse/KAN-84"
+  },
+  "TC-009": {
+    "issue_key": "KAN-85",
+    "url": "https://kwave55.atlassian.net/browse/KAN-85"
+  },
+  "TC-010": {
+    "issue_key": "KAN-86",
+    "url": "https://kwave55.atlassian.net/browse/KAN-86"
+  },
+  "TC-011": {
+    "issue_key": "KAN-87",
+    "url": "https://kwave55.atlassian.net/browse/KAN-87"
+  },
+  "TC-013": {
+    "issue_key": "KAN-88",
+    "url": "https://kwave55.atlassian.net/browse/KAN-88"
+  },
+  "TC-014": {
+    "issue_key": "KAN-89",
+    "url": "https://kwave55.atlassian.net/browse/KAN-89"
+  },
+  "TC-015": {
+    "issue_key": "KAN-90",
+    "url": "https://kwave55.atlassian.net/browse/KAN-90"
+  },
+  "TC-017": {
+    "issue_key": "KAN-91",
+    "url": "https://kwave55.atlassian.net/browse/KAN-91"
+  },
+  "TC-020": {
+    "issue_key": "KAN-92",
+    "url": "https://kwave55.atlassian.net/browse/KAN-92"
+  },
+  "TC-023": {
+    "issue_key": "KAN-93",
+    "url": "https://kwave55.atlassian.net/browse/KAN-93"
+  },
+  "TC-024": {
+    "issue_key": "KAN-94",
+    "url": "https://kwave55.atlassian.net/browse/KAN-94"
+  },
+  "TC-025": {
+    "issue_key": "KAN-95",
+    "url": "https://kwave55.atlassian.net/browse/KAN-95"
+  },
+  "TC-026": {
+    "issue_key": "KAN-96",
+    "url": "https://kwave55.atlassian.net/browse/KAN-96"
+  },
+  "TC-027": {
+    "issue_key": "KAN-97",
+    "url": "https://kwave55.atlassian.net/browse/KAN-97"
+  },
+  "TC-029": {
+    "issue_key": "KAN-98",
+    "url": "https://kwave55.atlassian.net/browse/KAN-98"
+  },
+  "TC-030": {
+    "issue_key": "KAN-99",
+    "url": "https://kwave55.atlassian.net/browse/KAN-99"
+  },
+  "TC-031": {
+    "issue_key": "KAN-100",
+    "url": "https://kwave55.atlassian.net/browse/KAN-100"
+  },
+  "TC-032": {
+    "issue_key": "KAN-101",
+    "url": "https://kwave55.atlassian.net/browse/KAN-101"
+  },
+  "TC-033": {
+    "issue_key": "KAN-102",
+    "url": "https://kwave55.atlassian.net/browse/KAN-102"
+  },
+  "TC-034": {
+    "issue_key": "KAN-103",
+    "url": "https://kwave55.atlassian.net/browse/KAN-103"
+  },
+  "TC-035": {
+    "issue_key": "KAN-104",
+    "url": "https://kwave55.atlassian.net/browse/KAN-104"
+  },
+  "TC-039": {
+    "issue_key": "KAN-105",
+    "url": "https://kwave55.atlassian.net/browse/KAN-105"
+  },
+  "TC-040": {
+    "issue_key": "KAN-106",
+    "url": "https://kwave55.atlassian.net/browse/KAN-106"
+  },
+  "TC-041": {
+    "issue_key": "KAN-107",
+    "url": "https://kwave55.atlassian.net/browse/KAN-107"
+  },
+  "TC-042": {
+    "issue_key": "KAN-108",
+    "url": "https://kwave55.atlassian.net/browse/KAN-108"
+  },
+  "TC-043": {
+    "issue_key": "KAN-109",
+    "url": "https://kwave55.atlassian.net/browse/KAN-109"
+  },
+  "TC-044": {
+    "issue_key": "KAN-110",
+    "url": "https://kwave55.atlassian.net/browse/KAN-110"
+  },
+  "TC-045": {
+    "issue_key": "KAN-111",
+    "url": "https://kwave55.atlassian.net/browse/KAN-111"
+  },
+  "TC-046": {
+    "issue_key": "KAN-112",
+    "url": "https://kwave55.atlassian.net/browse/KAN-112"
+  },
+  "TC-047": {
+    "issue_key": "KAN-113",
+    "url": "https://kwave55.atlassian.net/browse/KAN-113"
+  },
+  "TC-048": {
+    "issue_key": "KAN-114",
+    "url": "https://kwave55.atlassian.net/browse/KAN-114"
+  },
+  "TC-049": {
+    "issue_key": "KAN-115",
+    "url": "https://kwave55.atlassian.net/browse/KAN-115"
+  },
+  "TC-050": {
+    "issue_key": "KAN-116",
+    "url": "https://kwave55.atlassian.net/browse/KAN-116"
+  },
+  "TC-051": {
+    "issue_key": "KAN-117",
+    "url": "https://kwave55.atlassian.net/browse/KAN-117"
+  },
+  "TC-052": {
+    "issue_key": "KAN-118",
+    "url": "https://kwave55.atlassian.net/browse/KAN-118"
+  },
+  "TC-053": {
+    "issue_key": "KAN-119",
+    "url": "https://kwave55.atlassian.net/browse/KAN-119"
+  },
+  "TC-054": {
+    "issue_key": "KAN-120",
+    "url": "https://kwave55.atlassian.net/browse/KAN-120"
+  },
+  "TC-055": {
+    "issue_key": "KAN-121",
+    "url": "https://kwave55.atlassian.net/browse/KAN-121"
+  },
+  "TC-056": {
+    "issue_key": "KAN-122",
+    "url": "https://kwave55.atlassian.net/browse/KAN-122"
+  },
+  "TC-057": {
+    "issue_key": "KAN-123",
+    "url": "https://kwave55.atlassian.net/browse/KAN-123"
+  },
+  "TC-059": {
+    "issue_key": "KAN-124",
+    "url": "https://kwave55.atlassian.net/browse/KAN-124"
+  },
+  "TC-060": {
+    "issue_key": "KAN-125",
+    "url": "https://kwave55.atlassian.net/browse/KAN-125"
+  },
+  "TC-061": {
+    "issue_key": "KAN-126",
+    "url": "https://kwave55.atlassian.net/browse/KAN-126"
+  },
+  "TC-062": {
+    "issue_key": "KAN-127",
+    "url": "https://kwave55.atlassian.net/browse/KAN-127"
+  },
+  "TC-063": {
+    "issue_key": "KAN-128",
+    "url": "https://kwave55.atlassian.net/browse/KAN-128"
+  },
+  "TC-064": {
+    "issue_key": "KAN-129",
+    "url": "https://kwave55.atlassian.net/browse/KAN-129"
+  },
+  "TC-065": {
+    "issue_key": "KAN-130",
+    "url": "https://kwave55.atlassian.net/browse/KAN-130"
+  },
+  "TC-066": {
+    "issue_key": "KAN-131",
+    "url": "https://kwave55.atlassian.net/browse/KAN-131"
+  },
+  "TC-067": {
+    "issue_key": "KAN-132",
+    "url": "https://kwave55.atlassian.net/browse/KAN-132"
+  },
+  "TC-068": {
+    "issue_key": "KAN-133",
+    "url": "https://kwave55.atlassian.net/browse/KAN-133"
+  },
+  "TC-069": {
+    "issue_key": "KAN-134",
+    "url": "https://kwave55.atlassian.net/browse/KAN-134"
+  },
+  "TC-070": {
+    "issue_key": "KAN-135",
+    "url": "https://kwave55.atlassian.net/browse/KAN-135"
+  },
+  "TC-071": {
+    "issue_key": "KAN-136",
+    "url": "https://kwave55.atlassian.net/browse/KAN-136"
+  },
+  "TC-072": {
+    "issue_key": "KAN-137",
+    "url": "https://kwave55.atlassian.net/browse/KAN-137"
+  },
+  "TC-074": {
+    "issue_key": "KAN-138",
+    "url": "https://kwave55.atlassian.net/browse/KAN-138"
+  },
+  "TC-075": {
+    "issue_key": "KAN-139",
+    "url": "https://kwave55.atlassian.net/browse/KAN-139"
+  },
+  "TC-076": {
+    "issue_key": "KAN-140",
+    "url": "https://kwave55.atlassian.net/browse/KAN-140"
+  },
+  "TC-077": {
+    "issue_key": "KAN-141",
+    "url": "https://kwave55.atlassian.net/browse/KAN-141"
+  },
+  "TC-079": {
+    "issue_key": "KAN-142",
+    "url": "https://kwave55.atlassian.net/browse/KAN-142"
+  },
+  "TC-080": {
+    "issue_key": "KAN-143",
+    "url": "https://kwave55.atlassian.net/browse/KAN-143"
+  },
+  "TC-081": {
+    "issue_key": "KAN-144",
+    "url": "https://kwave55.atlassian.net/browse/KAN-144"
+  },
+  "TC-082": {
+    "issue_key": "KAN-145",
+    "url": "https://kwave55.atlassian.net/browse/KAN-145"
+  },
+  "TC-083": {
+    "issue_key": "KAN-146",
+    "url": "https://kwave55.atlassian.net/browse/KAN-146"
+  },
+  "TC-084": {
+    "issue_key": "KAN-147",
+    "url": "https://kwave55.atlassian.net/browse/KAN-147"
+  },
+  "TC-092": {
+    "issue_key": "KAN-148",
+    "url": "https://kwave55.atlassian.net/browse/KAN-148"
+  },
+  "TC-097": {
+    "issue_key": "KAN-149",
+    "url": "https://kwave55.atlassian.net/browse/KAN-149"
+  },
+  "TC-098": {
+    "issue_key": "KAN-150",
+    "url": "https://kwave55.atlassian.net/browse/KAN-150"
+  },
+  "TC-099": {
+    "issue_key": "KAN-151",
+    "url": "https://kwave55.atlassian.net/browse/KAN-151"
+  },
+  "TC-100": {
+    "issue_key": "KAN-152",
+    "url": "https://kwave55.atlassian.net/browse/KAN-152"
+  }
+}

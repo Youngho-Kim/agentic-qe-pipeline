@@ -1,0 +1,35 @@
+{
+  "blocks": [
+    {
+      "type": "header",
+      "text": {
+        "type": "plain_text",
+        "text": "🚀 [LIKEY] 모바일 E2E 자동화 테스트 릴리즈 알림"
+      }
+    },
+    {
+      "type": "section",
+      "fields": [
+        {
+          "type": "mrkdwn",
+          "text": "*테스트 대상:*\n티피씨 LIKEY 모바일 웹/앱 1:1 채팅 및 코인 결제 E2E"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*통과율:*\n*5/5건 (100.0%)*"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*디바이스 환경:*\niPhone 14 (iOS Safari WebKit/Mobile)"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*배포 판정:*\n🟢 GO (배포 승인)"
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    }
+  ]
+}

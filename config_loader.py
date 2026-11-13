@@ -14,6 +14,12 @@ DEFAULT_CONFIG = {
         "headless": False,
         "slow_mo_ms": 500,
         "timeout_ms": 10000
+    },
+    "jira": {
+        "base_url": "",
+        "email": "",
+        "api_token": "",
+        "project_key": "KAN"
     }
 }
 
@@ -26,5 +32,6 @@ def load_config(config_path: str = "config.json") -> dict:
     return {
         "paths": {**DEFAULT_CONFIG["paths"], **user_cfg.get("paths", {})},
         "quality_gate": {**DEFAULT_CONFIG["quality_gate"], **user_cfg.get("quality_gate", {})},
-        "browser": {**DEFAULT_CONFIG["browser"], **user_cfg.get("browser", {})}
+        "browser": {**DEFAULT_CONFIG["browser"], **user_cfg.get("browser", {})},
+        "jira": {**DEFAULT_CONFIG["jira"], **user_cfg.get("jira", {})}
     }

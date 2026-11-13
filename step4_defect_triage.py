@@ -2,6 +2,8 @@ import os
 import json
 from datetime import datetime
 from config_loader import load_config
+from config_loader import load_config
+from jira_connector import create_jira_issue
 
 _cfg = load_config()
 ARTIFACTS_DIR = _cfg["paths"]["artifacts_dir"]
@@ -64,6 +66,9 @@ def analyze_defects():
             f.write("## 1. 결함 유형별 분류 현황\n\n")
             for d in triaged_defects:
                 f.write(f"- **[{d['severity']}] {d['tc_id']}**: {d['classification']} ➔ {d['action']}\n")
+                jira_cfg = load_config().get("jira", {})
+                res = create_jira_issue(jira_cfg, d)
+                print(f"🎫 Jira 연동 결과: {res}")
 
     if failed_cases:
         with open(JIRA_TICKET_MD, "w", encoding="utf-8") as f:

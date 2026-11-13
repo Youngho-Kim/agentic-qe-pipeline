@@ -5,7 +5,7 @@
     "category": "인증",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 2.37,
+    "elapsed_seconds": 2.48,
     "screenshot": "artifacts/screenshots\\TC-001_fail.png",
     "error_details": "기대값 '상품 목록 페이지 헤더 확인' vs 실제값 'Products' 불일치",
     "failed_step": {
@@ -39,7 +39,7 @@
     "category": "유효성",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 1.61,
+    "elapsed_seconds": 1.6,
     "screenshot": "artifacts/screenshots\\TC-003_fail.png",
     "error_details": "기대값 '아이디 필수값 에러 노출 확인' vs 실제값 'Epic sadface: Username is required' 불일치",
     "failed_step": {
@@ -56,7 +56,7 @@
     "category": "유효성",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 1.62,
+    "elapsed_seconds": 1.63,
     "screenshot": "artifacts/screenshots\\TC-004_fail.png",
     "error_details": "기대값 '비밀번호 필수값 에러 노출 확인' vs 실제값 'Epic sadface: Password is required' 불일치",
     "failed_step": {
@@ -90,7 +90,7 @@
     "category": "보안",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 2.14,
+    "elapsed_seconds": 2.13,
     "screenshot": "artifacts/screenshots\\TC-006_fail.png",
     "error_details": "기대값 '계정 잠김 알림 에러 확인' vs 실제값 'Epic sadface: Sorry, this user has been locked out.' 불일치",
     "failed_step": {
@@ -107,7 +107,7 @@
     "category": "인증",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 2.11,
+    "elapsed_seconds": 2.12,
     "screenshot": "artifacts/screenshots\\TC-007_fail.png",
     "error_details": "기대값 '미등록 계정 불일치 에러 확인' vs 실제값 'Epic sadface: Username and password do not match any user in this service' 불일치",
     "failed_step": {
@@ -141,7 +141,7 @@
     "category": "인증",
     "priority": "P2",
     "status": "FAIL",
-    "elapsed_seconds": 7.15,
+    "elapsed_seconds": 7.14,
     "screenshot": "artifacts/screenshots\\TC-009_fail.png",
     "error_details": "Page.wait_for_selector: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='error']\") to be visible\n",
     "failed_step": {
@@ -158,7 +158,7 @@
     "category": "보안",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 2.14,
+    "elapsed_seconds": 2.15,
     "screenshot": "artifacts/screenshots\\TC-010_fail.png",
     "error_details": "기대값 '인젝션 차단 및 일반 에러 노출' vs 실제값 'Epic sadface: Username and password do not match any user in this service' 불일치",
     "failed_step": {
@@ -203,7 +203,7 @@
     "category": "보안",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 5.57,
+    "elapsed_seconds": 5.58,
     "screenshot": "artifacts/screenshots\\TC-013_fail.png",
     "error_details": "Page.wait_for_selector: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='error']\") to be visible\n",
     "failed_step": {
@@ -220,7 +220,7 @@
     "category": "보안",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 5.54,
+    "elapsed_seconds": 5.59,
     "screenshot": "artifacts/screenshots\\TC-014_fail.png",
     "error_details": "Page.wait_for_selector: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='error']\") to be visible\n",
     "failed_step": {
@@ -237,7 +237,7 @@
     "category": "보안",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 5.57,
+    "elapsed_seconds": 5.58,
     "screenshot": "artifacts/screenshots\\TC-015_fail.png",
     "error_details": "Page.wait_for_selector: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='error']\") to be visible\n",
     "failed_step": {
@@ -254,7 +254,7 @@
     "category": "인증",
     "priority": "P0",
     "status": "PASS",
-    "elapsed_seconds": 3.24,
+    "elapsed_seconds": 3.22,
     "screenshot": "artifacts/screenshots\\TC-016_pass.png",
     "error_details": "",
     "failed_step": null
@@ -265,7 +265,7 @@
     "category": "보안",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 8.27,
+    "elapsed_seconds": 8.21,
     "screenshot": "artifacts/screenshots\\TC-017_fail.png",
     "error_details": "Page.wait_for_selector: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='error']\") to be visible\n",
     "failed_step": {
@@ -282,7 +282,7 @@
     "category": "인증",
     "priority": "P2",
     "status": "PASS",
-    "elapsed_seconds": 0.52,
+    "elapsed_seconds": 0.54,
     "screenshot": "artifacts/screenshots\\TC-018_pass.png",
     "error_details": "",
     "failed_step": null
@@ -293,7 +293,7 @@
     "category": "성능",
     "priority": "P1",
     "status": "PASS",
-    "elapsed_seconds": 2.1,
+    "elapsed_seconds": 7.12,
     "screenshot": "artifacts/screenshots\\TC-019_pass.png",
     "error_details": "",
     "failed_step": null
@@ -304,7 +304,7 @@
     "category": "결함검증",
     "priority": "P2",
     "status": "FAIL",
-    "elapsed_seconds": 2.2,
+    "elapsed_seconds": 2.16,
     "screenshot": "artifacts/screenshots\\TC-020_fail.png",
     "error_details": "기대값 '상품 목록 타이틀 정상 렌더링 확인' vs 실제값 'Products' 불일치",
     "failed_step": {
@@ -321,7 +321,7 @@
     "category": "인벤토리",
     "priority": "P0",
     "status": "PASS",
-    "elapsed_seconds": 0.56,
+    "elapsed_seconds": 0.57,
     "screenshot": "artifacts/screenshots\\TC-021_pass.png",
     "error_details": "",
     "failed_step": null
@@ -332,7 +332,7 @@
     "category": "인벤토리",
     "priority": "P1",
     "status": "PASS",
-    "elapsed_seconds": 0.54,
+    "elapsed_seconds": 0.57,
     "screenshot": "artifacts/screenshots\\TC-022_pass.png",
     "error_details": "",
     "failed_step": null
@@ -343,7 +343,7 @@
     "category": "인벤토리",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 0.56,
+    "elapsed_seconds": 0.6,
     "screenshot": "artifacts/screenshots\\TC-023_fail.png",
     "error_details": "기대값 '기본 정렬 활성 옵션 확인' vs 실제값 'Name (A to Z)' 불일치",
     "failed_step": {
@@ -360,7 +360,7 @@
     "category": "인벤토리",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 0.57,
+    "elapsed_seconds": 0.6,
     "screenshot": "artifacts/screenshots\\TC-024_fail.png",
     "error_details": "기대값 '첫 번째 상품 Z 정렬 확인' vs 실제값 'Sauce Labs Backpack' 불일치",
     "failed_step": {
@@ -377,7 +377,7 @@
     "category": "인벤토리",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 0.59,
+    "elapsed_seconds": 0.61,
     "screenshot": "artifacts/screenshots\\TC-025_fail.png",
     "error_details": "기대값 '첫 번째 상품 A 정렬 복귀 확인' vs 실제값 'Sauce Labs Backpack' 불일치",
     "failed_step": {
@@ -394,7 +394,7 @@
     "category": "인벤토리",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 0.58,
+    "elapsed_seconds": 0.61,
     "screenshot": "artifacts/screenshots\\TC-026_fail.png",
     "error_details": "기대값 '최저가 $7.99 상품 선두 노출 확인' vs 실제값 '$29.99' 불일치",
     "failed_step": {
@@ -411,7 +411,7 @@
     "category": "인벤토리",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 0.56,
+    "elapsed_seconds": 0.6,
     "screenshot": "artifacts/screenshots\\TC-027_fail.png",
     "error_details": "기대값 '최고가 $49.99 상품 선두 노출 확인' vs 실제값 '$29.99' 불일치",
     "failed_step": {
@@ -428,7 +428,7 @@
     "category": "인벤토리",
     "priority": "P2",
     "status": "PASS",
-    "elapsed_seconds": 0.54,
+    "elapsed_seconds": 0.57,
     "screenshot": "artifacts/screenshots\\TC-028_pass.png",
     "error_details": "",
     "failed_step": null
@@ -439,7 +439,7 @@
     "category": "인벤토리",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 1.11,
+    "elapsed_seconds": 1.14,
     "screenshot": "artifacts/screenshots\\TC-029_fail.png",
     "error_details": "기대값 '버튼 텍스트 Remove로 변경 확인' vs 실제값 'Remove' 불일치",
     "failed_step": {
@@ -456,7 +456,7 @@
     "category": "인벤토리",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 31.06,
+    "elapsed_seconds": 31.09,
     "screenshot": "artifacts/screenshots\\TC-030_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -473,7 +473,7 @@
     "category": "인벤토리",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 31.07,
+    "elapsed_seconds": 31.09,
     "screenshot": "artifacts/screenshots\\TC-031_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -490,7 +490,7 @@
     "category": "인벤토리",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 31.07,
+    "elapsed_seconds": 31.09,
     "screenshot": "artifacts/screenshots\\TC-032_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -507,7 +507,7 @@
     "category": "인벤토리",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 31.05,
+    "elapsed_seconds": 31.31,
     "screenshot": "artifacts/screenshots\\TC-033_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -524,7 +524,7 @@
     "category": "인벤토리",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 31.07,
+    "elapsed_seconds": 31.09,
     "screenshot": "artifacts/screenshots\\TC-034_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -541,7 +541,7 @@
     "category": "인벤토리",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 31.07,
+    "elapsed_seconds": 31.08,
     "screenshot": "artifacts/screenshots\\TC-035_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -569,7 +569,7 @@
     "category": "인벤토리",
     "priority": "P0",
     "status": "PASS",
-    "elapsed_seconds": 1.12,
+    "elapsed_seconds": 1.14,
     "screenshot": "artifacts/screenshots\\TC-037_pass.png",
     "error_details": "",
     "failed_step": null
@@ -580,7 +580,7 @@
     "category": "인벤토리",
     "priority": "P1",
     "status": "PASS",
-    "elapsed_seconds": 1.12,
+    "elapsed_seconds": 1.14,
     "screenshot": "artifacts/screenshots\\TC-038_pass.png",
     "error_details": "",
     "failed_step": null
@@ -591,7 +591,7 @@
     "category": "인벤토리",
     "priority": "P2",
     "status": "FAIL",
-    "elapsed_seconds": 0.85,
+    "elapsed_seconds": 0.61,
     "screenshot": "artifacts/screenshots\\TC-039_fail.png",
     "error_details": "기대값 '새로고침 시 기본 정렬 복귀 확인' vs 실제값 'Name (A to Z)' 불일치",
     "failed_step": {
@@ -608,7 +608,7 @@
     "category": "인벤토리",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 1.11,
+    "elapsed_seconds": 1.16,
     "screenshot": "artifacts/screenshots\\TC-040_fail.png",
     "error_details": "기대값 '장바구니 페이지 타이틀 진입 확인' vs 실제값 'Your Cart' 불일치",
     "failed_step": {
@@ -625,7 +625,7 @@
     "category": "상세페이지",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 0.57,
+    "elapsed_seconds": 0.6,
     "screenshot": "artifacts/screenshots\\TC-041_fail.png",
     "error_details": "기대값 '상품명 일치 확인' vs 실제값 'Sauce Labs Backpack' 불일치",
     "failed_step": {
@@ -642,7 +642,7 @@
     "category": "상세페이지",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 31.05,
+    "elapsed_seconds": 31.1,
     "screenshot": "artifacts/screenshots\\TC-042_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -659,7 +659,7 @@
     "category": "상세페이지",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 31.06,
+    "elapsed_seconds": 31.11,
     "screenshot": "artifacts/screenshots\\TC-043_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -676,7 +676,7 @@
     "category": "상세페이지",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 1.16,
+    "elapsed_seconds": 1.15,
     "screenshot": "artifacts/screenshots\\TC-044_fail.png",
     "error_details": "기대값 '인벤토리 목록 페이지 복귀 확인' vs 실제값 'Products' 불일치",
     "failed_step": {
@@ -693,7 +693,7 @@
     "category": "상세페이지",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 31.05,
+    "elapsed_seconds": 31.08,
     "screenshot": "artifacts/screenshots\\TC-045_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -710,7 +710,7 @@
     "category": "상세페이지",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 0.59,
+    "elapsed_seconds": 0.62,
     "screenshot": "artifacts/screenshots\\TC-046_fail.png",
     "error_details": "기대값 '상품명 확인' vs 실제값 'Sauce Labs Bike Light' 불일치",
     "failed_step": {
@@ -727,7 +727,7 @@
     "category": "상세페이지",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 0.57,
+    "elapsed_seconds": 0.6,
     "screenshot": "artifacts/screenshots\\TC-047_fail.png",
     "error_details": "기대값 '상품명 확인' vs 실제값 'Sauce Labs Bolt T-Shirt' 불일치",
     "failed_step": {
@@ -744,7 +744,7 @@
     "category": "상세페이지",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 0.58,
+    "elapsed_seconds": 0.61,
     "screenshot": "artifacts/screenshots\\TC-048_fail.png",
     "error_details": "기대값 '상품명 확인' vs 실제값 'Sauce Labs Fleece Jacket' 불일치",
     "failed_step": {
@@ -761,7 +761,7 @@
     "category": "상세페이지",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 0.59,
+    "elapsed_seconds": 0.6,
     "screenshot": "artifacts/screenshots\\TC-049_fail.png",
     "error_details": "기대값 '상품명 확인' vs 실제값 'Sauce Labs Onesie' 불일치",
     "failed_step": {
@@ -778,7 +778,7 @@
     "category": "상세페이지",
     "priority": "P2",
     "status": "FAIL",
-    "elapsed_seconds": 0.58,
+    "elapsed_seconds": 0.61,
     "screenshot": "artifacts/screenshots\\TC-050_fail.png",
     "error_details": "기대값 '미존재 상품 에러/안내 노출 검증' vs 실제값 'ITEM NOT FOUND' 불일치",
     "failed_step": {
@@ -795,7 +795,7 @@
     "category": "장바구니",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 31.07,
+    "elapsed_seconds": 31.1,
     "screenshot": "artifacts/screenshots\\TC-051_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -812,7 +812,7 @@
     "category": "장바구니",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 31.07,
+    "elapsed_seconds": 31.09,
     "screenshot": "artifacts/screenshots\\TC-052_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -829,7 +829,7 @@
     "category": "장바구니",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 31.06,
+    "elapsed_seconds": 31.12,
     "screenshot": "artifacts/screenshots\\TC-053_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -846,7 +846,7 @@
     "category": "장바구니",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 1.16,
+    "elapsed_seconds": 1.15,
     "screenshot": "artifacts/screenshots\\TC-054_fail.png",
     "error_details": "기대값 '인벤토리 복귀 확인' vs 실제값 'Products' 불일치",
     "failed_step": {
@@ -863,7 +863,7 @@
     "category": "장바구니",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 31.06,
+    "elapsed_seconds": 31.08,
     "screenshot": "artifacts/screenshots\\TC-055_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -880,7 +880,7 @@
     "category": "장바구니",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 31.07,
+    "elapsed_seconds": 31.09,
     "screenshot": "artifacts/screenshots\\TC-056_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -897,7 +897,7 @@
     "category": "장바구니",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 31.07,
+    "elapsed_seconds": 31.08,
     "screenshot": "artifacts/screenshots\\TC-057_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -914,7 +914,7 @@
     "category": "장바구니",
     "priority": "P2",
     "status": "PASS",
-    "elapsed_seconds": 1.11,
+    "elapsed_seconds": 1.12,
     "screenshot": "artifacts/screenshots\\TC-058_pass.png",
     "error_details": "",
     "failed_step": null
@@ -925,7 +925,7 @@
     "category": "장바구니",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 31.06,
+    "elapsed_seconds": 31.08,
     "screenshot": "artifacts/screenshots\\TC-059_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -942,7 +942,7 @@
     "category": "장바구니",
     "priority": "P2",
     "status": "FAIL",
-    "elapsed_seconds": 31.07,
+    "elapsed_seconds": 31.09,
     "screenshot": "artifacts/screenshots\\TC-060_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -959,7 +959,7 @@
     "category": "장바구니",
     "priority": "P2",
     "status": "FAIL",
-    "elapsed_seconds": 31.08,
+    "elapsed_seconds": 31.1,
     "screenshot": "artifacts/screenshots\\TC-061_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -976,7 +976,7 @@
     "category": "장바구니",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 31.07,
+    "elapsed_seconds": 31.13,
     "screenshot": "artifacts/screenshots\\TC-062_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -993,7 +993,7 @@
     "category": "장바구니",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 1.71,
+    "elapsed_seconds": 1.69,
     "screenshot": "artifacts/screenshots\\TC-063_fail.png",
     "error_details": "기대값 '상품 목록 복귀 확인' vs 실제값 'Products' 불일치",
     "failed_step": {
@@ -1010,7 +1010,7 @@
     "category": "장바구니",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 31.08,
+    "elapsed_seconds": 31.1,
     "screenshot": "artifacts/screenshots\\TC-064_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -1027,7 +1027,7 @@
     "category": "장바구니",
     "priority": "P2",
     "status": "FAIL",
-    "elapsed_seconds": 0.76,
+    "elapsed_seconds": 0.61,
     "screenshot": "artifacts/screenshots\\TC-065_fail.png",
     "error_details": "기대값 '수량 라벨 노출' vs 실제값 'QTY' 불일치",
     "failed_step": {
@@ -1044,7 +1044,7 @@
     "category": "체크아웃",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 2.67,
+    "elapsed_seconds": 2.69,
     "screenshot": "artifacts/screenshots\\TC-066_fail.png",
     "error_details": "기대값 '결제 2단계 Overview 진입' vs 실제값 'Checkout: Your Information' 불일치",
     "failed_step": {
@@ -1061,7 +1061,7 @@
     "category": "체크아웃",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 2.18,
+    "elapsed_seconds": 2.17,
     "screenshot": "artifacts/screenshots\\TC-067_fail.png",
     "error_details": "기대값 '이름 필수 입력 에러 노출' vs 실제값 'Error: Last Name is required' 불일치",
     "failed_step": {
@@ -1078,7 +1078,7 @@
     "category": "체크아웃",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 2.13,
+    "elapsed_seconds": 2.18,
     "screenshot": "artifacts/screenshots\\TC-068_fail.png",
     "error_details": "기대값 '성 필수 입력 에러 노출' vs 실제값 'Error: Last Name is required' 불일치",
     "failed_step": {
@@ -1095,7 +1095,7 @@
     "category": "체크아웃",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 2.13,
+    "elapsed_seconds": 2.17,
     "screenshot": "artifacts/screenshots\\TC-069_fail.png",
     "error_details": "기대값 '우편번호 필수 입력 에러 노출' vs 실제값 'Error: Last Name is required' 불일치",
     "failed_step": {
@@ -1112,7 +1112,7 @@
     "category": "체크아웃",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 1.11,
+    "elapsed_seconds": 1.13,
     "screenshot": "artifacts/screenshots\\TC-070_fail.png",
     "error_details": "기대값 '첫 번째 필드인 이름 에러 최우선 노출' vs 실제값 'Error: First Name is required' 불일치",
     "failed_step": {
@@ -1129,7 +1129,7 @@
     "category": "체크아웃",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 1.11,
+    "elapsed_seconds": 1.14,
     "screenshot": "artifacts/screenshots\\TC-071_fail.png",
     "error_details": "기대값 '카트 페이지 복귀 확인' vs 실제값 'Your Cart' 불일치",
     "failed_step": {
@@ -1146,7 +1146,7 @@
     "category": "체크아웃",
     "priority": "P2",
     "status": "FAIL",
-    "elapsed_seconds": 2.64,
+    "elapsed_seconds": 2.69,
     "screenshot": "artifacts/screenshots\\TC-072_fail.png",
     "error_details": "기대값 '특수문자 정상 처리 및 다음 단계 이동' vs 실제값 'Checkout: Your Information' 불일치",
     "failed_step": {
@@ -1163,7 +1163,7 @@
     "category": "체크아웃",
     "priority": "P2",
     "status": "PASS",
-    "elapsed_seconds": 2.63,
+    "elapsed_seconds": 2.66,
     "screenshot": "artifacts/screenshots\\TC-073_pass.png",
     "error_details": "",
     "failed_step": null
@@ -1174,7 +1174,7 @@
     "category": "체크아웃",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 0.57,
+    "elapsed_seconds": 0.62,
     "screenshot": "artifacts/screenshots\\TC-074_fail.png",
     "error_details": "기대값 '결제 정보 라벨 확인' vs 실제값 'Payment Information:' 불일치",
     "failed_step": {
@@ -1191,7 +1191,7 @@
     "category": "체크아웃",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 5.54,
+    "elapsed_seconds": 5.59,
     "screenshot": "artifacts/screenshots\\TC-075_fail.png",
     "error_details": "Page.wait_for_selector: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\".summary_value_label:nth-of-type(1)\") to be visible\n",
     "failed_step": {
@@ -1208,7 +1208,7 @@
     "category": "체크아웃",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 0.57,
+    "elapsed_seconds": 0.62,
     "screenshot": "artifacts/screenshots\\TC-076_fail.png",
     "error_details": "기대값 '배송 옵션 표기 일치' vs 실제값 'SauceCard #31337' 불일치",
     "failed_step": {
@@ -1225,7 +1225,7 @@
     "category": "체크아웃",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 31.06,
+    "elapsed_seconds": 31.08,
     "screenshot": "artifacts/screenshots\\TC-077_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -1242,7 +1242,7 @@
     "category": "체크아웃",
     "priority": "P0",
     "status": "PASS",
-    "elapsed_seconds": 0.55,
+    "elapsed_seconds": 0.6,
     "screenshot": "artifacts/screenshots\\TC-078_pass.png",
     "error_details": "",
     "failed_step": null
@@ -1253,7 +1253,7 @@
     "category": "체크아웃",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 0.58,
+    "elapsed_seconds": 0.61,
     "screenshot": "artifacts/screenshots\\TC-079_fail.png",
     "error_details": "기대값 '소계+세금($29.99+$2.40=$32.39) 총액 일치' vs 실제값 'Total: $64.78' 불일치",
     "failed_step": {
@@ -1304,7 +1304,7 @@
     "category": "체크아웃",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 0.57,
+    "elapsed_seconds": 0.63,
     "screenshot": "artifacts/screenshots\\TC-082_fail.png",
     "error_details": "기대값 '최종 성공 완료 헤더 텍스트 확인' vs 실제값 'Thank you for your order!' 불일치",
     "failed_step": {
@@ -1321,7 +1321,7 @@
     "category": "체크아웃",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 0.59,
+    "elapsed_seconds": 0.61,
     "screenshot": "artifacts/screenshots\\TC-083_fail.png",
     "error_details": "기대값 '배송 출고 안내 문구 확인' vs 실제값 'Your order has been dispatched, and will arrive just as fast as the pony can get there!' 불일치",
     "failed_step": {
@@ -1338,7 +1338,7 @@
     "category": "체크아웃",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 1.12,
+    "elapsed_seconds": 1.14,
     "screenshot": "artifacts/screenshots\\TC-084_fail.png",
     "error_details": "기대값 '상품 목록 페이지 복귀 확인' vs 실제값 'Products' 불일치",
     "failed_step": {
@@ -1355,7 +1355,7 @@
     "category": "체크아웃",
     "priority": "P0",
     "status": "PASS",
-    "elapsed_seconds": 0.54,
+    "elapsed_seconds": 0.57,
     "screenshot": "artifacts/screenshots\\TC-085_pass.png",
     "error_details": "",
     "failed_step": null
@@ -1366,7 +1366,7 @@
     "category": "네비게이션",
     "priority": "P1",
     "status": "PASS",
-    "elapsed_seconds": 1.09,
+    "elapsed_seconds": 1.11,
     "screenshot": "artifacts/screenshots\\TC-086_pass.png",
     "error_details": "",
     "failed_step": null
@@ -1377,7 +1377,7 @@
     "category": "네비게이션",
     "priority": "P1",
     "status": "PASS",
-    "elapsed_seconds": 1.66,
+    "elapsed_seconds": 1.67,
     "screenshot": "artifacts/screenshots\\TC-087_pass.png",
     "error_details": "",
     "failed_step": null
@@ -1388,7 +1388,7 @@
     "category": "네비게이션",
     "priority": "P1",
     "status": "PASS",
-    "elapsed_seconds": 3.02,
+    "elapsed_seconds": 2.16,
     "screenshot": "artifacts/screenshots\\TC-088_pass.png",
     "error_details": "",
     "failed_step": null
@@ -1399,7 +1399,7 @@
     "category": "푸터",
     "priority": "P2",
     "status": "PASS",
-    "elapsed_seconds": 0.57,
+    "elapsed_seconds": 0.61,
     "screenshot": "artifacts/screenshots\\TC-089_pass.png",
     "error_details": "",
     "failed_step": null
@@ -1410,7 +1410,7 @@
     "category": "푸터",
     "priority": "P2",
     "status": "PASS",
-    "elapsed_seconds": 0.54,
+    "elapsed_seconds": 0.56,
     "screenshot": "artifacts/screenshots\\TC-090_pass.png",
     "error_details": "",
     "failed_step": null
@@ -1421,7 +1421,7 @@
     "category": "푸터",
     "priority": "P2",
     "status": "PASS",
-    "elapsed_seconds": 0.53,
+    "elapsed_seconds": 0.57,
     "screenshot": "artifacts/screenshots\\TC-091_pass.png",
     "error_details": "",
     "failed_step": null
@@ -1432,7 +1432,7 @@
     "category": "푸터",
     "priority": "P2",
     "status": "FAIL",
-    "elapsed_seconds": 0.57,
+    "elapsed_seconds": 0.6,
     "screenshot": "artifacts/screenshots\\TC-092_fail.png",
     "error_details": "기대값 '카피라이트 문구 검증' vs 실제값 '© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy' 불일치",
     "failed_step": {
@@ -1449,7 +1449,7 @@
     "category": "반응형",
     "priority": "P1",
     "status": "PASS",
-    "elapsed_seconds": 0.54,
+    "elapsed_seconds": 0.57,
     "screenshot": "artifacts/screenshots\\TC-093_pass.png",
     "error_details": "",
     "failed_step": null
@@ -1460,7 +1460,7 @@
     "category": "반응형",
     "priority": "P2",
     "status": "PASS",
-    "elapsed_seconds": 0.53,
+    "elapsed_seconds": 0.57,
     "screenshot": "artifacts/screenshots\\TC-094_pass.png",
     "error_details": "",
     "failed_step": null
@@ -1471,7 +1471,7 @@
     "category": "결함검증",
     "priority": "P1",
     "status": "PASS",
-    "elapsed_seconds": 3.67,
+    "elapsed_seconds": 3.74,
     "screenshot": "artifacts/screenshots\\TC-095_pass.png",
     "error_details": "",
     "failed_step": null
@@ -1482,7 +1482,7 @@
     "category": "결함검증",
     "priority": "P1",
     "status": "PASS",
-    "elapsed_seconds": 4.79,
+    "elapsed_seconds": 4.82,
     "screenshot": "artifacts/screenshots\\TC-096_pass.png",
     "error_details": "",
     "failed_step": null
@@ -1493,7 +1493,7 @@
     "category": "성능",
     "priority": "P2",
     "status": "FAIL",
-    "elapsed_seconds": 32.64,
+    "elapsed_seconds": 37.65,
     "screenshot": "artifacts/screenshots\\TC-097_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -1510,7 +1510,7 @@
     "category": "상태유지",
     "priority": "P2",
     "status": "FAIL",
-    "elapsed_seconds": 31.28,
+    "elapsed_seconds": 31.11,
     "screenshot": "artifacts/screenshots\\TC-098_fail.png",
     "error_details": "Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-test='add-to-cart-sauce-labs-backpack']\")\n",
     "failed_step": {
@@ -1527,7 +1527,7 @@
     "category": "보안",
     "priority": "P1",
     "status": "FAIL",
-    "elapsed_seconds": 3.95,
+    "elapsed_seconds": 2.28,
     "screenshot": "artifacts/screenshots\\TC-099_fail.png",
     "error_details": "기대값 '개인정보 화면 접근 차단 확인' vs 실제값 'Epic sadface: You can only access '/checkout-step-two.html' when you are logged in.' 불일치",
     "failed_step": {
@@ -1544,7 +1544,7 @@
     "category": "E2E",
     "priority": "P0",
     "status": "FAIL",
-    "elapsed_seconds": 13.71,
+    "elapsed_seconds": 5.86,
     "screenshot": "artifacts/screenshots\\TC-100_fail.png",
     "error_details": "기대값 '주문 금액 검증' vs 실제값 'Item total: $37.98' 불일치",
     "failed_step": {

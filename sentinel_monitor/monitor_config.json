@@ -1,0 +1,22 @@
+{
+  "monitor_name": "Sentinel-QE Service & API Health Monitor",
+  "port": 8900,
+  "check_interval_sec": 5,
+  "retry_threshold": 2,
+  "timeout_sec": 3,
+  "latency_warn_ms": 800,
+  "artifacts_dir": "monitor_artifacts",
+  "slack_webhook_url": "",
+  "targets": [
+    {
+      "name": "SauceDemo Web",
+      "url": "https://www.saucedemo.com/",
+      "expected_status": 200
+    },
+    {
+      "name": "GitHub API",
+      "url": "https://api.github.com",
+      "expected_status": 200
+    }
+  ]
+}
