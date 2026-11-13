@@ -129,7 +129,8 @@ def decide_release():
     return True
 
 if __name__ == "__main__":
-    decide_release()import os
+    decide_release() 
+import os
 import json
 from datetime import datetime
 from openpyxl import load_workbook

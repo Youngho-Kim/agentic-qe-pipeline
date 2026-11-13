@@ -391,3 +391,11 @@ Call log:
 - **분류**: 비즈니스 기획 불일치 또는 UI 문구 결함 (Functional Bug)
 - **에러 로그**: `기대값 '주문 금액 검증' vs 실제값 'Item total: $37.98' 불일치`
 
+## [P2 (Medium)] TC-API-01: 공개 API 조회 검증
+- **분류**: UI 셀렉터 변경 또는 요소 미탐색 (DOM Locator Issue)
+- **에러 로그**: `<urlopen error unknown url type: [https>`
+
+## [P2 (Medium)] TC-API-02: 게시글 생성 POST 검증
+- **분류**: UI 셀렉터 변경 또는 요소 미탐색 (DOM Locator Issue)
+- **에러 로그**: `<urlopen error unknown url type: [https>`
+

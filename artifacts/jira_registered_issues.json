@@ -302,5 +302,13 @@
   "TC-100": {
     "issue_key": "KAN-152",
     "url": "https://kwave55.atlassian.net/browse/KAN-152"
+  },
+  "TC-API-01": {
+    "issue_key": "KAN-153",
+    "url": "https://kwave55.atlassian.net/browse/KAN-153"
+  },
+  "TC-API-02": {
+    "issue_key": "KAN-154",
+    "url": "https://kwave55.atlassian.net/browse/KAN-154"
   }
 }
